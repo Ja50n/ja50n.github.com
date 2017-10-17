@@ -1,19 +1,19 @@
 ---
-title: "品印宝设备文档"
-permalink: /pybhelp/
+title: "设备文档"
+permalink: /help/
 ---
 
 <head>
-<title>品印宝设备文档</title>
+<title>设备文档</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="/css/pybhelp.css">
+<link rel="stylesheet" type="text/css" href="/css/help.css">
 <link rel="icon" href="/img/pybhelp.ico" />
 </head>
 
 <body>
 <div class="nav">
 	<div class="nav-div">
-		<a title="品印宝官方网站" href="http://www.pybmv.com">帮助/HELP</a>
+		<a title="品印宝官方网站" href="heep://ulinkmega.com">帮助/HELP</a>
 	</div>
 </div>
 <div class="download-main">
