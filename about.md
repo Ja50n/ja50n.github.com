@@ -20,11 +20,10 @@ permalink: /about/
 </div>
 <style type="text/css">
     p img{
-/*        border-radius:50%;*/
+        border-radius:5px;
         box-shadow:none;
         margin:0 auto 64px auto;
-    /*    width:100px;
-        height:100px;*/
+        height:300px;
     }
     p img:hover{
         box-shadow:none;
