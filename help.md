@@ -1,16 +1,9 @@
 ---
+layout: help
 title: "设备文档"
 permalink: /help/
 ---
 
-<head>
-<title>设备文档</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="/css/help.css">
-<link rel="icon" href="/img/pybhelp.ico" />
-</head>
-
-<body>
 <div class="nav">
 	<div class="nav-div">
 		<a title="品印宝官方网站" href="heep://ulinkmega.com">帮助/HELP</a>
@@ -90,4 +83,3 @@ permalink: /help/
 <br>
 <br>
 <br>
-</body>

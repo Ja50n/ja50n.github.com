@@ -8,9 +8,9 @@ permalink: /about/
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="divider"></div>
     </header>
-    <article class="section about">
+<!--     <article class="section about">
         {{ content }}
-    </article>
+    </article> -->
 </div>
 <!-- 固定导航按钮 -->
 <div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
@@ -20,11 +20,11 @@ permalink: /about/
 </div>
 <style type="text/css">
     p img{
-        border-radius:50%;
+/*        border-radius:50%;*/
         box-shadow:none;
         margin:0 auto 64px auto;
-        width:100px;
-        height:100px;
+    /*    width:100px;
+        height:100px;*/
     }
     p img:hover{
         box-shadow:none;
@@ -36,7 +36,7 @@ permalink: /about/
 
 <!-- 关于页面内容 -->
 
-![Jason](http://i1.tietuku.com/aac36cc1f332767f.png)
+![Jason](http://blog.ulinkmega.com/img/me.jpg)
 
 ##### Jason.Qiu
 
