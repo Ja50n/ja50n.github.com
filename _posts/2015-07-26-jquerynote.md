@@ -9,7 +9,7 @@ published: True
 comments: True
 ---
 
-不学习JavaScript直接学习jQuery，目的是使用jQuery完成一些提升浏览体验的细节动画和交互。
+jQuery学习资料，后续提升浏览体验的细节动画和交互，以备修改参考或学习。
 
 <!--more-->
 
