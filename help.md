@@ -18,12 +18,12 @@ permalink: /help/
 		</a>
 	</li>
 	<li class="doc">
-		<a target="_blank" href="http://pan.baidu.com/s/1c0GoJHe" title="下载.doc word文档格式">
+		<a target="_blank" href="http://blog.ulinkmega.com/help/404" title="下载.doc word文档格式">
 				下载 DOC 文件
 		</a>
 	</li>
 	<li class="pdf">
-		<a target="_blank" href="http://pan.baidu.com/s/1o6n4fmM" title="下载.pdf 文件格式">
+		<a target="_blank" href="http://blog.ulinkmega.com/help/404" title="下载.pdf 文件格式">
 				下载 PDF 文件
 		</a>
 	</li>
@@ -38,12 +38,12 @@ permalink: /help/
 		</a>
 	</li>
 	<li class="doc">
-		<a target="_blank" href="http://pan.baidu.com/s/1qW9U6xI" title="下载.doc word文档格式">
+		<a target="_blank" href="http://blog.ulinkmega.com/help/404" title="下载.doc word文档格式">
 				下载 DOC 文件
 		</a>
 	</li>
 	<li class="pdf">
-		<a target="_blank" href="http://pan.baidu.com/s/1jGnMbVC" title="下载.pdf 文件格式">
+		<a target="_blank" href="http://blog.ulinkmega.com/help/404" title="下载.pdf 文件格式">
 				下载 PDF 文件
 		</a>
 	</li>
