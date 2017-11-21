@@ -3,7 +3,7 @@ title: You Link Blog
 email: 18675559035@163.com
 description: > # Study notes, resource sharing, practical projects, living with the mind. Program 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ulink-el.com" # the base hostname & protocol for your site
+url: "http://blog.ulinkmega.com" # the base hostname & protocol for your site
 twitter_username: TINE4359
 github_username:  Ja50n
 weibo_username: TINE59
@@ -12,7 +12,7 @@ weibo_username: TINE59
 markdown: kramdown
 # highlighter: rouge
 excerpt_separator: <!--more-->
-duoshuo_shortname:  Ja50n
+uyan_ID:  2149414
 paginate: 5
 paginate_path: "page:num"
 plugins: [jekyll-paginate]
