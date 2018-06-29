@@ -39,6 +39,7 @@ comments: true
 - **Red**: 检查 [*AESTHETIC VISUAL INSPECTION & SEGMENTATION*]
 - **Green**: 分类 [*SCENE TAGGING & OBJECT CLASSIFICATION*]
 - **Blue Read**: OCR识读 [*Optical Character Recognition*]
+
 ![Blue](https://www.cognex.cn/library/media/products/deep-learning/vidi-blue-icon.png?h=55&w=131&la=zh-CN&hash=C34CF60D0E440A3958B8DB2A04C9E61E830326AF)
 ![Red](https://www.cognex.cn/library/media/products/deep-learning/vidi-red-icon.png?h=55&w=131&la=zh-CN&hash=57BEAB76606714BEA1014AB6037A9E83D3A80BCB)
 ![Green](https://www.cognex.cn/library/media/products/deep-learning/vidi-green-icon.png?h=55&w=131&la=zh-CN&hash=1A6BE9A587DF0C4BC32143F8AA10ECDB575B6FD5)
