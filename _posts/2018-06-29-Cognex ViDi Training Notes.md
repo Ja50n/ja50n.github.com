@@ -15,6 +15,8 @@ comments: true
 2. Algorithms 【算法】
 3. Affordare Computing Power 【GPU计算】
 
+<!--more-->
+
 #### 图像深度学习要点
 - 图像
 - 特征信息
