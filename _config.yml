@@ -12,9 +12,9 @@ weibo_username: TINE59
 markdown: kramdown
 # highlighter: rouge
 excerpt_separator: <!--more-->
-uyan_ID:  2149414
 paginate: 5
 paginate_path: "page:num"
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
 
-port: 5000
+port: 4000

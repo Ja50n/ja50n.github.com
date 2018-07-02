@@ -9,16 +9,16 @@
 
   <div class="container">
     <div class="section">
-      {% if site.uyan_ID and page.comments %}
-      <!-- 多说评论框 start -->
-      <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}"></div>
-      <!-- 多说评论框 end -->
-      {% endif %}</div>
+      <!-- {% if site.uyan_ID and page.comments %} -->
+      <!-- 评论框 start -->
+      <!-- <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}"></div> -->
+      <!-- 评论 end -->
+      <!-- {% endif %}</div> -->
   </div>
   {% include footer.html %}
 
   {% if page.comments %}
-      {% include uyan_comments.html %}
+
   {% endif %}
 </body>
 </html>
