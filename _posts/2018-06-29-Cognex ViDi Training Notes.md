@@ -10,8 +10,6 @@ comments: true
 
 ---
 
-<br>
-
 ##### 深度学习 [Deep Learning]
 1. Abundance of Data 【大量数据】
 2. Algorithms 【算法】
