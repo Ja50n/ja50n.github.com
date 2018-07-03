@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
+
 <body>
-  {% include header.html %}
-  <div class="container">
-    <div class="section">{{ content }}</div>
-  </div>
+    {% include header.html %}
+    <div class="container">
+        <div class="section">{{ content }}</div>
+    </div>
 
-  <div class="container">
-    <div class="section">
-      <!-- {% if site.uyan_ID and page.comments %} -->
-      <!-- 评论框 start -->
-      <!-- <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}"></div> -->
-      <!-- 评论 end -->
-      <!-- {% endif %}</div> -->
-  </div>
-  {% include footer.html %}
+    <!-- 评论框 start -->
+    <div class="container">
+        <div class="section">
+            {% if page.comments %}
+            <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}">
+              {% include livereComments.html %}      
+            </div>
+            {% endif %}</div>
+    </div> 
+    <!-- 评论框 end -->
 
-  {% if page.comments %}
+    <!-- 评论功能JS start -->
+    {% if page.comments %} 
+    {% endif %}
+    <!-- 评论功能JS end -->
 
-  {% endif %}
+    {% include footer.html %} 
+
+   
 </body>
+
 </html>
