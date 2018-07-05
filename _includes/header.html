@@ -1,55 +1,53 @@
 <header>
-  <nav class="indigo fixed-top" role="navigation">
+  <nav class="white fixed-top z-depth-1" role="navigation">
     <div class="nav-wrapper container">
-      <a href="{{ site.baseurl }}/" class="brand-logo waves-effect" title="返回主页" ><img style="height: 40px;width: 40px" src="{{ site.baseurl }}/img/LOGO-W.png"></a>
+      <a href="{{ site.baseurl }}/" class="brand-logo waves-red" title="返回主页" ><img style="height: 40px;width: 40px" src="{{ site.baseurl }}/img/Ulink.png"></a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="{{ site.baseurl }}/" class="waves-effect head-right">首页</a>
+          <a href="{{ site.baseurl }}/" class="waves-effect head-right nav-a">首页</a>
         </li>
         <li>
-          <a href="{{ site.baseurl }}/categories/" class="waves-effect head-right">分类</a>
+          <a href="{{ site.baseurl }}/categories/" class="waves-effect head-right nav-a">分类</a>
         </li>
         <li>
-          <a href="{{ site.baseurl }}/tags/" class="waves-effect head-right">标签</a>
+          <a href="{{ site.baseurl }}/tags/" class="waves-effect head-right nav-a">标签</a>
         </li>
         <li class="bold">
-          <a href="{{ site.baseurl }}/help/" class="waves-effect waves-blue">帮助</a>
+          <a href="{{ site.baseurl }}/help/" class="waves-effect waves-light nav-a">帮助</a>
         </li>
         <li>
-          <a href="{{ site.baseurl }}/about/" class="waves-effect head-right">关于</a>
+          <a href="{{ site.baseurl }}/about/" class="waves-effect head-right nav-a">关于</a>
         </li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li class="logo" id="side-banner">
-          <a href="{{ site.baseurl }}/" class="waves-effect waves-blue" id="side-logo"></a>
+          <a href="{{ site.baseurl }}/" class="waves-effect waves-light" id="side-logo"></a>
         </li>
         <li class="bold">
-          <a href="{{ site.baseurl }}/" class="waves-effect waves-blue">首页</a>
+          <a href="{{ site.baseurl }}/" class="waves-effect waves-light nav-a">首页</a>
         </li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li class="bold">
-              <a class="collapsible-header  waves-effect waves-blue">分类</a>
+              <a class="collapsible-header  waves-effect waves-light nav-a">分类</a>
               <div class="collapsible-body">
                 <ul>
                   {% for category in site.categories %}
                   <li>
-                    <a  class="waves-effect waves-blue"
- class="waves-effect waves-blue" href="{{ site.baseurl }}/categories/index.html#{{ category | first }}-ref">{{ category | first }}</a>
+                    <a  class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/categories/index.html#{{ category | first }}-ref">{{ category | first }}</a>
                   </li>
                   {% endfor %}
                 </ul>
               </div>
             </li>
             <li class="bold">
-              <a class="collapsible-header  waves-effect waves-blue">标签</a>
+              <a class="collapsible-header  waves-effect waves-light nav-a">标签</a>
               <div class="collapsible-body">
                 <ul>
                   {% for tags in site.tags %}
                   <li>
-                    <a  class="waves-effect waves-blue"
- class="waves-effect waves-blue" href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref">{{ tags | first }}</a>
+                    <a  class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref">{{ tags | first }}</a>
                   </li>
                   {% endfor %}
                 </ul>
@@ -58,13 +56,13 @@
           </ul>
         </li>
         <li class="bold">
-          <a href="{{ site.baseurl }}/help/" class="waves-effect waves-blue">帮助</a>
+          <a href="{{ site.baseurl }}/help/" class="waves-effect waves-light nav-a">帮助</a>
         </li>
         <li class="bold">
-          <a href="{{ site.baseurl }}/about/" class="waves-effect waves-blue">关于</a>
+          <a href="{{ site.baseurl }}/about/" class="waves-effect waves-light nav-a">关于</a>
         </li>
       </ul>
-      <a href="" data-activates="nav-mobile" class="button-collapse waves-effect waves-light"> <i class="mdi-navigation-menu"></i>
+      <a href="" data-activates="nav-mobile" class="button-collapse waves-effect waves-light nav-a"> <i class="mdi-navigation-menu"></i>
       </a>
     </div>
   </nav>

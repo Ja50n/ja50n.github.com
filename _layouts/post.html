@@ -13,11 +13,11 @@ layout: default
 	<ul class="postinfo grey-text">
 		<li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text post-i"></i>
 			{% for tags in page.tags %}
-			<a class="grey-text" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
+			<a class="posttag-a" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
 			{% endfor %}
 		</li>
 		<li class="postcat"> <i class="mdi-file-folder nbsp-1 grey-text post-i"></i>
-			<a class="grey-text" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
+			<a class="postcat-a" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
 		</li>
 		<li class="posttime">
 			<i class="mdi-action-today nbsp-1 grey-text post-i"></i>
@@ -38,7 +38,7 @@ layout: default
 <div class="divider"></div>
 <div>
 	{% for tags in site.tags %}
-	<a href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref" class="waves-effect waves-light grey-text text-darken-3 tags-cloud" >
+	<a href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref" class="waves-effect waves-light white-text tags-cloud" >
 		{{ tags | first }}
 		<span class="cata-num">{{ tags | last | size }}</span>
 	</a>

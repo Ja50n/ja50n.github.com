@@ -1,3 +1,16 @@
+/*声明 WebFont*/
+/*@font-face {
+  font-family: 'pinghei';
+  src: url('../font/PingFang Regular.ttf');
+  src:
+    url('../font/PingFang Regular.eot?#font-spider') format('embedded-opentype'),
+    url('../font/PingFang Regular.woff') format('woff'),
+    url('../font/PingFang Regular.ttf') format('truetype'),
+    url('../font/PingFang Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
 /* Custom Stylesheet */
 body
 {
@@ -8,8 +21,6 @@ body
 }
 .fixed-top
 {
-    font-family: 'Roboto','黑体';
-
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -24,7 +35,7 @@ body
     padding-left: 80px;
 
     border-bottom: thin solid #e0e0e0;
-    background-image: url(../img/LOGO.png);
+    background-image: url(../img/Ulink.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 40%;
@@ -46,14 +57,15 @@ body
          -o-transition: color ease .3s;
             transition: color ease .3s;
 
-    color: #ef5350;
+    color: #2c7cff;
 }
-#index-banner
+#index-banner,
+#side-banner
 {
     background-color: #343434;
-    background-image: url(http://i3.tietuku.com/87e857e1f8864a1b.png);
+    background-image: url(../img/image1.png);
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 50% 100%;
     background-size: 100%;
 }
 #index-banner h5
@@ -63,7 +75,7 @@ body
 #side-banner
 {
     background-color: #343434;
-    background-image: url(http://i3.tietuku.com/87e857e1f8864a1b.png);
+    background-image: url(../img/image1.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100%;
@@ -104,20 +116,23 @@ body
 {
     content: '  ';
 }
-.posttag a,
-.postcat a
+.posttag-a,
+.postcat-a
 {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    color: #9e9e9e ;
 }
-.posttag a:hover,
-.postcat a:hover
+.posttag-a:hover,
+.postcat-a:hover
 {
-    -webkit-transition: color ease .3s;
-       -moz-transition: color ease .3s;
-         -o-transition: color ease .3s;
-            transition: color ease .3s;
+/*    -webkit-transition: transform ease .5s;
+       -moz-transition: transform ease .5s;
+         -o-transition: transform ease .5s;
+            transition: transform ease .5s;
+    transform: translate(0,-5px);*/
+    text-decoration: underline;
 
-    color: #ef5350;
+    color: #2c7cff;
 }
 .index-comment
 {
@@ -146,7 +161,7 @@ body
          -o-transition: color ease .3s;
             transition: color ease .3s;
 
-    color: #ef5350;
+    color: #2c7cff;
 }
 .cataday
 {
@@ -204,7 +219,7 @@ body
          -o-transition: color ease .3s;
             transition: color ease .3s;
 
-    color: #f23061;
+    color: #2c7cff;
 }
 .next
 {
@@ -250,13 +265,7 @@ body
 
     display: block;
 
-    color: #3f51b5;
-}
-.cata-num
-{
-    font-size: 1rem;
-
-    vertical-align: super;
+    color: #2c7cff;
 }
 p img
 {
@@ -270,14 +279,17 @@ p img
        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
-p img:hover{
+p img:hover
+{
     transition: box-shadow .3s;
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
-p code,.post-ulol ul code,
+p code,
+.post-ulol ul code,
 .post-ulol ul li code
 {
-    font-family: Monaco,Consolas,Menlo,'Andale Mono','Courier New','Ubuntu Mono',Arial,'Microsoft YaHei','Hiragino Sans GB',sans-serif;
+    font-family: 'Source Code Pro',Consolas,;
 
     margin: 0 2px;
     padding: 0 4px;
@@ -285,12 +297,14 @@ p code,.post-ulol ul code,
     letter-spacing: 1px;
     word-break: initial;
 
-    color: #f23061;
+    color: #2c7cff;
     border-bottom: 0;
     border-radius: 4px;
     background: #ededed;
 }
-.post-ulol ul,.post-ulol ol{
+.post-ulol ul,
+.post-ulol ol
+{
     margin: 0 0 0 15px;
     padding: 10px 0;
 }
@@ -310,31 +324,41 @@ p code,.post-ulol ul code,
 }
 .tags-cloud
 {
+    font-size: .9em;
+
     margin: 5px;
     padding: 5px 10px;
 
-    border: 1px dashed #424242;
+    border: 1px dashed #2c7cff;
     border-radius: 5px;
-    background-color: #ededed;
+    background-color: #2c7cff;
 }
 .tags-cloud:hover
 {
-    -webkit-transition: background-color ease .3s;
-       -moz-transition: background-color ease .3s;
-         -o-transition: background-color ease .3s;
-            transition: background-color ease .3s;
+    transform: scale(1.1);
 
-    background-color: #f23061;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+       -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+.cata-num
+{
+    font-size: .6rem;
+
+    vertical-align: super;
+}
+.a-hover{
+      -webkit-transition: transform ease .5s;
+       -moz-transition: transform ease .5s;
+         -o-transition: transform ease .5s;
+            transition: transform ease .5s;
 }
 .a-hover:hover
 {
-    -webkit-transition: color ease .3s;
-       -moz-transition: color ease .3s;
-         -o-transition: color ease .3s;
-            transition: color ease .3s;
+      transform: translate(0,-5px);
     text-decoration: underline;
 
-    color: #f23061;
+    /*color: #2c7cff;*/
 }
 .page404
 {
@@ -442,28 +466,40 @@ p code,.post-ulol ul code,
     border-radius: 0 5px 5px 0;
     background-color: #424242;
 }
-#side-fixed-nav{
-    position:fixed;
-    right:10px;
-    top:74px;
+.nav-a{
+color: #000;
+}
+.nav-a:hover{
+    background-color: #2c7cff;
+color: #fff;
+}
+#side-fixed-nav
+{
+    position: fixed;
+    top: 74px;
+    right: 10px;
+
     opacity: .9;
 }
-#side-fixed-nav ul{
+#side-fixed-nav ul
+{
+    margin: 0;
     padding: 0;
-    margin:0;
 }
-#side-fixed-nav ul li{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-}
-#slogan{
-    margin:100px 0;
-}
-.social-icon:hover{
+#side-fixed-nav ul li
+{
+    margin: 0;
+    padding: 0;
 
+    list-style-type: none;
 }
-.username{
+#slogan
+{
+    margin: 100px 0;
+}
+
+.username
+{
     position: relative;
 }
 @media only screen and (max-device-width: 500px)

@@ -11,10 +11,10 @@ layout: home
       </h2>
             <ul class="postinfo grey-text">
                 <li class="posttag"> <i class="mdi-maps-local-offer grey-text post-i"></i> {% for tags in post.tags %}
-                    <a href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" class="grey-text" title="标签">{{tags}}</a> {% endfor %}
+                    <a href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" class="posttag-a" title="标签">{{tags}}</a> {% endfor %}
                 </li>
                 <li class="postcat"> <i class="mdi-file-folder grey-text post-i"></i>
-                    <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="grey-text" title="分类">{{ post.categories }}</a>
+                    <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="posttag-a" title="分类">{{ post.categories }}</a>
                 </li>
                 <li class="posttime">
                     <i class="mdi-action-today grey-text post-i"></i> {{ post.date | date: "%b %-d, %Y" }}
