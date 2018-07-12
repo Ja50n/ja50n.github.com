@@ -3,7 +3,7 @@ layout: post
 title: jQuery参考手册及学习笔记
 date: 2015-07-26 08:19:35
 postid: post0726
-categories: [Notes]
+categories: [notes]
 tags: [Web, jQuery]
 published: True
 comments: True
