@@ -3,7 +3,7 @@ layout: post
 title: 星のうつわ
 date: 2015-07-27 22:12:06
 postid: post0727
-categories: [life]
+categories: [Life]
 tags: [Naruto, Music]
 published: True
 comments: True

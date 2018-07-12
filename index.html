@@ -16,11 +16,11 @@ layout: home
                 <li class="postcat"> <i class="mdi-file-folder grey-text text-darken-4 post-i"></i>
                     <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="grey-text text-darken-4 posttag-a" title="分类">{{ post.categories }}</a>
                 </li>
-                <li class="posttime">
-                    <i class="mdi-action-today grey-text text-darken-4 post-i"></i> {{ post.date | date: "%m/%d, %Y" }}
+                <li class="posttime grey-text text-darken-4">
+                    <i class="mdi-action-today post-i"></i> {{ post.date | date: "%m/%d, %Y" }}
                 </li>
-                <li class="postcomment">
-                    <i class="mdi-communication-comment grey-text text-darken-4 post-i"></i>
+                <li class="postcomment grey-text text-darken-4">
+                    <i class="mdi-communication-comment post-i"></i>
                     <span class="ds-thread-count" data-thread-key="{{ post.postid }}" data-count-type="comments"></span>
                 </li>
                 <div class="clear"></div>

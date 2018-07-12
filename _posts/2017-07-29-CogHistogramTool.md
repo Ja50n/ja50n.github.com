@@ -3,7 +3,7 @@ layout: post
 title: "CogHistogramTool"
 date: 2017-07-29 22:03:51
 postid: post0730
-categories: [notes]
+categories: [Notes]
 tags: [Vision Pro]
 published: True
 comments: True

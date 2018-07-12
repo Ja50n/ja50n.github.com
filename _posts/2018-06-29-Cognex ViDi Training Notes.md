@@ -3,7 +3,7 @@ layout: post
 title: "Cognex ViDi 培训笔记"
 date: 2018-06-29 16:16:22
 postid: post180629
-categories: [notes]
+categories: [Notes]
 tags: [Cognex,Machine Vision,ViDi]
 published: true
 comments: true
