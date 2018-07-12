@@ -10,17 +10,17 @@ layout: home
         <a class="lighter post-link a-hover" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
             <ul class="postinfo grey-text">
-                <li class="posttag"> <i class="mdi-maps-local-offer grey-text post-i"></i> {% for tags in post.tags %}
-                    <a href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" class="posttag-a" title="标签">{{tags}}</a> {% endfor %}
+                <li class="posttag"> <i class="mdi-maps-local-offer grey-text text-darken-4 post-i"></i> {% for tags in post.tags %}
+                    <a href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" class="grey-text text-darken-4 posttag-a" title="标签">{{tags}}</a> {% endfor %}
                 </li>
-                <li class="postcat"> <i class="mdi-file-folder grey-text post-i"></i>
-                    <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="posttag-a" title="分类">{{ post.categories }}</a>
+                <li class="postcat"> <i class="mdi-file-folder grey-text text-darken-4 post-i"></i>
+                    <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="grey-text text-darken-4 posttag-a" title="分类">{{ post.categories }}</a>
                 </li>
                 <li class="posttime">
-                    <i class="mdi-action-today grey-text post-i"></i> {{ post.date | date: "%m/%d, %Y" }}
+                    <i class="mdi-action-today grey-text text-darken-4 post-i"></i> {{ post.date | date: "%m/%d, %Y" }}
                 </li>
                 <li class="postcomment">
-                    <i class="mdi-communication-comment grey-text post-i"></i>
+                    <i class="mdi-communication-comment grey-text text-darken-4 post-i"></i>
                     <span class="ds-thread-count" data-thread-key="{{ post.postid }}" data-count-type="comments"></span>
                 </li>
                 <div class="clear"></div>

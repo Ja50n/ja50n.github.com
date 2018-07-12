@@ -11,20 +11,20 @@ layout: default
 	</p>
 	-->
 	<ul class="postinfo grey-text">
-		<li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text post-i"></i>
+		<li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text text-darken-4 post-i"></i>
 			{% for tags in page.tags %}
-			<a class="posttag-a" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
+			<a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
 			{% endfor %}
 		</li>
-		<li class="postcat"> <i class="mdi-file-folder nbsp-1 grey-text post-i"></i>
-			<a class="postcat-a" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
+		<li class="postcat"> <i class="mdi-file-folder nbsp-1 grey-text text-darken-4 post-i"></i>
+			<a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
 		</li>
 		<li class="posttime">
-			<i class="mdi-action-today nbsp-1 grey-text post-i"></i>
+			<i class="mdi-action-today nbsp-1 grey-text text-darken-4 post-i"></i>
 			{{ page.date | date: "%m/%d, %Y" }}
 		</li>
 		<li class="postcomment">
-			<i class="mdi-communication-comment nbsp-1 grey-text post-i"></i>
+			<i class="mdi-communication-comment nbsp-1 grey-text text-darken-4 post-i"></i>
 			<span class="ds-thread-count" data-thread-key="{{ page.postid }}" data-count-type="comments"></span>
 		</li>
 		<div class="clear"></div>
