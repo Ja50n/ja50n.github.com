@@ -12,12 +12,8 @@ comments: ture
 
 <!--more-->
 
-{% highlight vb.net linenos %}
-void GetFifoState(
-    out Int32& numPending,
-    out Int32& numReady,
-    out Boolean& busy
-)
+{% highlight vb linenos %}
+void GetFifoState(out Int32& numPending,out Int32& numReady,out Boolean& busy)
 {% endhighlight %}
 
 *numPending/挂起状态数*
@@ -89,7 +85,7 @@ void GetFifoState(
 完成相机初始化,相机的运行由触发模式决定(自动/硬件触发).
 
 示例代码:
-{% highlight vb.net linenos %}
+{% highlight vb linenos %}
 
 'mAcqFifo 为定义的 cogAcqFifoTool 工具
 Dim numReadyVal, numPendingVal, myTicket, currentTrigNum As Integer

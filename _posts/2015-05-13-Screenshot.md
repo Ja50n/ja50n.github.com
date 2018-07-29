@@ -11,12 +11,12 @@ comments: ture
 
 <!--more-->
 
-{% highlight vb.net linenos %}
+{% highlight vb linenos %}
 
 Imports Cognex.VisionPro.ImageProcessing
 Imports System.Runtime.Serialization.Formatters.Binar
 
-Public Declare Function ClipCursor Lib "user32" Alias "ClipCursor" (ByRef rec As System.Drawing.Rectangle) As Long
+Public Declare Function ClipCursor Lib "user32" Alias "ClipCursor" (ByRef rec As System.Drawing.Rectangle) As Long asdalsjdflasjflhasflhafhahsfahsjf
 
 Dim Begin_Record As Boolean
 Dim Digital_Click As String

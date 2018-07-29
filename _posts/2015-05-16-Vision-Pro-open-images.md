@@ -11,7 +11,7 @@ comments: ture
 
 <!--more-->
 
-{% highlight vb.net linenos %}
+{% highlight vb linenos %}
 
 imports cognex.visionpro.cogImageFileTool
 
@@ -22,7 +22,7 @@ imports cognex.visionpro.cogImageFileTool
 > cogImageFileTool.[Operator].Open(图片地址,CogImageFileModeContents.Read)
 
 示例代码：
-{% highlight vb.net linenos %}
+{% highlight vb linenos %}
 
 '用 ImageTool 打开图片的函数
 mImageFileTool.[Operator].Open(mImagePath, CogImageFileModeConstants.Read)
