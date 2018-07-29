@@ -5,7 +5,8 @@ postid: post0620
 date: 2015-06-20 23:49:00
 tags: [思考]
 categories: [Life]
-comments: true
+published: True
+comments: True
 ---
 
 端午节假期，只能和同事一起度过（T_T）。没什么活动，头一天上猫眼看看有什么电影可以看，买了「侏罗纪世界」的票。本来准备好好看场电影，结果到了电影院一看，一群小孩子，感觉整个人就不好了...

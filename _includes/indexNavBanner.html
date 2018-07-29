@@ -70,18 +70,16 @@
         </div>
     </nav>
     
-  <section class="section no-pad-bot" id="index-banner">
-    <div class="section no-pad-bot" id="index-banner-opacity"></div>
-    <div class="container">
+  <section class="section no-pad-bot no-padding" id="indexBanner">
+    <!-- <div class="section no-pad-bot" id="index-banner-opacity"></div> -->
+    <div class="container sloganMain">
       <div id="slogan">
         <h1 class="header center white-text text-accent-3 thin">Design & Code</h1>
         <h1 class="header center white-text text-accent-3 thin">Internet</h1>
         <h1 class="header center white-text text-accent-3 thin">Machine Vision</h1>
       </div>
-      <div class="row center margin-top">
-
-        <br>
-        <ul class="power-by grey-text">
+      <div class="power-by-DIV">
+        <ul class="row center grey-text power-by">
           <li>Power by :</li>
           <li>
             <a class="white-text" target="_blank" href="http://jekyllcn.com/">Jekyll</a>
@@ -102,5 +100,29 @@
       </div>
 
     </div>
-    <div class="divider"></div>
+    <!-- <div class="divider"></div> -->
   </section>
+
+<script>
+var winWidth = 0;
+function findDimensions() //函数：获取尺寸
+{
+//获取窗口高度
+if (window.innerHeight)
+winHeight = window.innerHeight;
+else if ((document.body) && (document.body.clientHeight))
+winHeight = document.body.clientHeight;
+//通过深入Document内部对body进行检测，获取窗口大小
+if (document.documentElement && document.documentElement.clientHeight)
+{
+winHeight = document.documentElement.clientHeight;
+}
+var obj = document.getElementById('indexBanner');  
+                obj.setAttribute("id", "indexBanner");
+                  obj.style.height= winHeight +"px";
+}
+
+findDimensions();
+//调用函数，获取数值
+window.onresize=findDimensions;
+</script>

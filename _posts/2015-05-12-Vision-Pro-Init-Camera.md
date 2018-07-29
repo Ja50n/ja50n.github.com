@@ -5,7 +5,8 @@ postid: post0512
 date:   2015-05-12 00:56:13
 tags: [Vision Pro, VB.NET]
 categories: [Code]
-comments: ture
+published: True
+comments: True
 ---
 
 **先用GetFifoState获取AcqFifoTool的状态.**

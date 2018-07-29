@@ -5,15 +5,19 @@ postid: post091018
 date:   2009-10-18 20:13:13
 tags: [随笔]
 categories: [Life]
-comments: ture
+published: True
+comments: True
 ---
+
 梧桐树下，消瘦的男孩握着萧条的笔
 
 刻录在叶上，他的情丝
 
+群聚的星星，是一颗颗思念的结晶
+
 <!--more-->
 
-群聚的星星，是一颗颗思念的结晶
+<br>
 
 为他照亮了丝絮，不惧寂夜
 

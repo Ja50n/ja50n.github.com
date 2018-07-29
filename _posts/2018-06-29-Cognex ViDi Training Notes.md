@@ -48,16 +48,16 @@ comments: true
 
 ##### 工具介绍
 
-![Blue](https://www.cognex.cn/library/media/products/deep-learning/vidi-blue-icon.png?h=55&w=131&la=zh-CN&hash=C34CF60D0E440A3958B8DB2A04C9E61E830326AF)
+![Blue](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/16495628.jpg)
 - **Blue**: 标注 [*FEATURE DETECTION & IDENTIFICATION*]
  
-![Red](https://www.cognex.cn/library/media/products/deep-learning/vidi-red-icon.png?h=55&w=131&la=zh-CN&hash=57BEAB76606714BEA1014AB6037A9E83D3A80BCB)
+![Red](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/592488.jpg)
 - **Red**: 检查 [*AESTHETIC VISUAL INSPECTION & SEGMENTATION*]
 
-![Green](https://www.cognex.cn/library/media/products/deep-learning/vidi-green-icon.png?h=55&w=131&la=zh-CN&hash=1A6BE9A587DF0C4BC32143F8AA10ECDB575B6FD5)
+![Green](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/32677104.jpg)
 - **Green**: 分类 [*SCENE TAGGING & OBJECT CLASSIFICATION*]
 
-![Blue Read](https://www.cognex.cn/library/media/products/deep-learning/vidi-blue-read-icon.png?h=55&w=131&la=zh-CN&hash=D552D758A38A58567BB33780AE63BB0B89DADEF9)
+![Blue Read](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/39601969.jpg)
 - **Blue Read**: OCR识读 [*Optical Character Recognition*]
 
 <br>

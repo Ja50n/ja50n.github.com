@@ -5,7 +5,7 @@ date: 2015-07-07 21:27:22
 postid: post070701
 categories: [Method]
 tags: [Sublime Text, Ubuntu]
-comments: true
+comments: True
 published: True
 
 ---

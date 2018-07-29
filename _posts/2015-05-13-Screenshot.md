@@ -5,7 +5,8 @@ postid: post0513
 date:   2015-05-13 22:23:43
 tags: [VB.NET]
 categories: [Code]
-comments: ture
+published: True
+comments: True
 ---
 调用外部工程函数。对当前显示屏幕进行截屏并保存。
 

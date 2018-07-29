@@ -5,7 +5,8 @@ postid: post0611
 date: 2015-06-11 22:50:00
 tags: [Github Pages, Web]
 categories: [Method]
-comments: ture
+published: True
+comments: True
 ---
 
 使用GitCafe Pages服务来搭建博客时就计划了要使用自定义的域名，一是为了更专业，二是对于普通人来说`username.gitcafe.io`这个域名太难记了。原计划在博客完成后期去考虑配置自定义域名，所以最终没有给GitCafe Pages配置，现在整个站点已经完全迁移到了Github上。最近看到由网友分享将博客同步提交到GitCafe和Github，而且针对IP地址进行解析，境内解析到GitCafe，境外解析到Github。有时间的时候准备也这样做一下。
