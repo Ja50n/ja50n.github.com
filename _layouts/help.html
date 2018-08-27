@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>设备文档</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="/css/help.css">
-<link rel="icon" href="/img/pybhelp.ico" />
+    <title>使用文档</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/help.css">
+    <link rel="icon" href="{{ " /favicon.ico " | prepend: site.baseurl }}" />
 </head>
+
 <body>
-  <div class="container">
-    <div class="section">{{ content }}</div>
-  </div>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-div">
+                <a title="官网" href="http://blog.ulinkmega.com">帮助/HELP</a>
+            </div>
+        </div>
+        <div class="section">{{ content }}</div>
+    </div>
 </body>
+
 </html>
