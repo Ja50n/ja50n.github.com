@@ -5,7 +5,7 @@ postid: post091018
 date:   2009-10-18 20:13:13
 tags: [随笔]
 categories: [Life]
-published: True
+published: False
 comments: True
 ---
 
