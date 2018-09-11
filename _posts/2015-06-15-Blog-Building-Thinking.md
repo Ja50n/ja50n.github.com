@@ -94,7 +94,6 @@ Markdown是很早就了解的一个标记语言，适合写文章。后来得知
 
 迁移到Github Pages和Jekyll用了一天左右的时间，这较我之前的进度来说，已经是很快的了，不得不感叹Jekyll的方便和强大。
 
-![v0.05](http://ulink-el.com/img/v0.05.png) 
 ![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911215245.png)
 
 ###### 6. Jekyll深入学习使用
