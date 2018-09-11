@@ -16,7 +16,7 @@ comments: True
 
 <!--more-->
 
-![histogramtool](http://i3.tietuku.com/7b4070b9511c7042.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911213542.png)
 
 **用途**
 
@@ -30,18 +30,18 @@ comments: True
 
 默认状态下,柱状图在整个图像上运行，为了分析图像的单个区域,选择一个区域形状并且在`Current.InputImage`上操纵。
 
-![histogramtool](http://i3.tietuku.com/4723e6073556085f.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911213846.png)
 
-![histogramtool](http://i3.tietuku.com/27efde479297c198.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911213906.png)
 
 **图形**
 
 可选项,更改在运行时显示的图形
 
-![histogramtool](http://i3.tietuku.com/64e51f4d3a22906c.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911213919.png)
 
 **结果**
 
 结果显示在控件和浮动结果表格中，也可在VB或者C语言代码中访问
 
-![histogramtool](http://i3.tietuku.com/aefd9d296c213fe9.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911213926.png)

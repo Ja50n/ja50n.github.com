@@ -39,20 +39,17 @@ comments: True
 
 *文章主要目的不是分享教程，而是一个搭建过程的记录和思考，只放部分截图。*
 
-<!-- ![v0.01](http://ulink-el.com/img/v0.01.png) -->
-![v0.01](http://i1.tietuku.com/05458810cb5715cd.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/博客历史界面.jpg)
 
 在对比了十款左右的Material Design风格开发框架之后，选择了[Materialize](http://materializecss.com/)，响应式设计，移动端UI风格接近Android软件，对框架CSS进行若干修改之后，整体框架基本成型。
 
-<!-- ![Materialize ShootScreen](http://ulink-el.com/img/v0.02.png) -->
-![Materialize ShootScreen](http://i1.tietuku.com/82f304bb8c95236f.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911220335.png)
 
 ###### 2. HighLighter代码高亮
 
 因为是编程学习博客，代码高亮是一定要有的，又是各种搜索，找到了比较有名的[SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)，配置比较简单。页面添加对应`js`，`css`文件，代码引用部分的`class`类改为`brush:[语言名称]`就可以了。
 
-<!-- ![SyntaxHighlighter](http://ulink-el.com/img/v0.03.png) -->
-![SyntaxHighlighter](http://i1.tietuku.com/65c1f0994dc6a430.png)
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911220245.png)
 
 ###### 3. 多说评论
 
@@ -64,8 +61,7 @@ comments: True
 
 大概是开始有做博客想法的时候就决定了要做响应式，手机上要可以比较方便的浏览学习笔记。所以移动端的优化一直是贯穿始终的，Chrome和FireFox都能够切换到响应式设计模式进行预览。
 
-<!-- ![移动端](http://ulink-el.com/img/v0.04.png) -->
-![移动端](http://i1.tietuku.com/47cf83dff017553b.png)
+<!-- ![移动端](http://i1.tietuku.com/47cf83dff017553b.png) -->
 
 ###### 5. 迁移到 Github Pages 并使用 Jekyll 工具
 
@@ -81,12 +77,11 @@ Markdown是很早就了解的一个标记语言，适合写文章。后来得知
 
         1. 速度。Github在国内还是不太稳定，出现过几次问题
         2. 语种。初学git，需要能够快速上手
-        3. 界面。喜欢GitCafe的网站界面，那是JASKNi刚去GitCafe不久后重新设计的(好吧，其实就是喜欢JASKNi...)
+        3. 界面。喜欢GitCafe的网站界面，那是JASKNi刚去GitCafe不久后重新设计的(喜欢JASKNi...)
 
 但是Github才是最优秀的远程代码托管仓库，大量的优秀的开源产品都托管在Github上，要从GitCafe迁移到Github，这正好是一个契机。迁移的过程还比较快，将本地公钥添加到Github上之后，按照官方教程新建一个Github Pages项目。为了防止出现意外，还是将源文件夹复制了一份出来，然后将远程仓库地址改到Github，再 `git push`到Github就完事了。GieCafe还会继续使用，有时间的时候把博客同步提交到GitCafe上。
 
 ---
-
 2015/08/03更新分割线
 
 实现GieCafe和Github同步提交，域名解析使用DNSPod，分别根据访问IP解析到国内的GitCafe或者国外的Github，提高访问速度。
@@ -99,8 +94,8 @@ Markdown是很早就了解的一个标记语言，适合写文章。后来得知
 
 迁移到Github Pages和Jekyll用了一天左右的时间，这较我之前的进度来说，已经是很快的了，不得不感叹Jekyll的方便和强大。
 
-<!-- ![v0.05](http://ulink-el.com/img/v0.05.png) -->
-![v0.05](http://i3.tietuku.com/06594e78e8bed97f.png)
+![v0.05](http://ulink-el.com/img/v0.05.png) 
+![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911215245.png)
 
 ###### 6. Jekyll深入学习使用
 
@@ -134,5 +129,9 @@ GitCafe已经卖给Coding了，不提供服务，GitCafe
 2017/** 更新分割线
 
 原来的文章图片为了提升浏览速度，统一托管在贴图库上，现在免费版的保存时间缩短到了7天，需要重新寻找更好的图片托管服务了。
+
+---
+2018.09.11 更新分割线
+*贴图库图床规则更改，图片丢失*，改为使用[PicGo](https://github.com/Molunerfinn/PicGo/releases)图床。
 
 <br>
