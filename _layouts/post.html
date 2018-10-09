@@ -2,76 +2,78 @@
 layout: default
 ---
 <div class="post">
-
-	<header class="post-header">
-		<h1 class="post-title">{{ page.title }}</h1>
-		<div class="divider"></div>
-		<!--     <p class="post-meta">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="divider"></div>
+        <!--     <p class="post-meta">
 		{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
 	</p>
 	-->
-	<ul class="postinfo grey-text">
-		<li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text text-darken-4 post-i"></i>
-			{% for tags in page.tags %}
-			<a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
-			{% endfor %}
-		</li>
-		<li class="postcat"> <i class="mdi-file-folder nbsp-1 grey-text text-darken-4 post-i"></i>
-			<a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
-		</li>
-		<li class="posttime grey-text text-darken-4">
-			<i class="mdi-action-today nbsp-1 post-i"></i>
-			{{ page.date | date: "%m/%d, %Y" }}
-		</li>
-		<!-- <li class="postcomment grey-text text-darken-4">
+        <ul class="postinfo grey-text">
+            <li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text text-darken-4 post-i"></i>
+                {% for tags in page.tags %}
+                <a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
+                {% endfor %}
+            </li>
+            <li class="postcat"> <i class="mdi-file-folder nbsp-1 grey-text text-darken-4 post-i"></i>
+                <a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
+            </li>
+            <li class="posttime grey-text text-darken-4">
+                <i class="mdi-action-today nbsp-1 post-i"></i> 
+                {{ page.date | date: "%m/%d, %Y" }}
+            </li>
+            <li class="postvisited grey-text text-darken-4">
+                <i class="mdi-action-assessment post-i"></i>
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_value_site_pv"></span>次
+            </li>
+            <!-- <li class="postcomment grey-text text-darken-4">
 			<i class="mdi-communication-comment nbsp-1 post-i"></i>
 			<span class="ds-thread-count" data-thread-key="{{ page.postid }}" data-count-type="comments"></span>
 		</li> -->
-		<div class="clear"></div>
-	</ul>
-</header>
-<!-- 正文开始 -->
-<article class="post-content post-ulol"  id="{{ page.postid }}">{{ content }}</article>
-<!-- 正文结束 -->
-<div style="margin-bottom:100px"></div>
-<!-- 标签云开始 -->
-<div class="divider"></div>
-<div>
-	{% for tags in site.tags %}
-	<a href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref" class="waves-effect waves-light white-text tags-cloud" >
+            <div class="clear"></div>
+        </ul>
+    </header>
+    <!-- 正文开始 -->
+    <article class="post-content post-ulol" id="{{ page.postid }}">{{ content }}</article>
+    <!-- 正文结束 -->
+    <div style="margin-bottom:100px"></div>
+    <!-- 标签云开始 -->
+    <div class="divider"></div>
+    <div>
+        {% for tags in site.tags %}
+        <a href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref" class="waves-effect waves-light white-text tags-cloud" >
 		{{ tags | first }}
 		<span class="cata-num">{{ tags | last | size }}</span>
 	</a>
-	{% endfor %}
-	<br>
-	<br></div>
-<!-- 标签云结束	 -->
-
-<!-- 页面导航开始 -->
-<div class="divider"></div>
-<div class="post-nav">
-	<div class="next">
-		{% if page.next %}
-		<a title="更新一篇" href="{{ page.next.url }}">
+        {% endfor %}
+        <br>
+        <br></div>
+    <!-- 标签云结束	 -->
+    <!-- 页面导航开始 -->
+    <div class="divider"></div>
+    <div class="post-nav">
+        <div class="next">
+            {% if page.next %}
+            <a title="更新一篇" href="{{ page.next.url }}">
 			<i class="mdi-navigation-chevron-left"></i>
 			{{page.next.title}}
 		</a>
-		{% endif %}
-	</div>
-	<div class="pre">
-		{% if page.previous %}
-		<a title="更早一篇" href="{{ page.previous.url }}">
+            {% endif %}
+        </div>
+        <div class="pre">
+            {% if page.previous %}
+            <a title="更早一篇" href="{{ page.previous.url }}">
 			<i class="mdi-navigation-chevron-right"></i>
 			{{page.previous.title}}
 		</a>
-		{% endif %}
-	</div>
-</div>
+            {% endif %}
+        </div>
+    </div>
 </div>
 <div class="clear"></div>
 <div class="divider"></div>
 <!-- 页面导航结束 -->
-
 <!-- 分享按钮 -->
 <!-- {% if page.comments %}
 <div class="section"></div>
@@ -97,7 +99,6 @@ layout: default
 </div>
 </div>
 {% endif %} -->
-
 <!-- 固定导航按钮 -->
 <!-- <div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
 <a class="btn-floating btn-large waves-effect waves-light red darken-2 ">
