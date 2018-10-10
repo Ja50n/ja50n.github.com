@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "SublimeText3 Settings Sync Config Backup"
+title: "备份 Sublime Text3 - Sync Settings 插件的 User Settings"
 postid: post181010
-date: 2018-10-10 11:22:13
-tags: [SublimeText3]
+date: 2018-10-10 16:19:13
+tags: [Sublime Text]
 categories: [Backup]
 published: true
 comments: true
@@ -13,7 +13,7 @@ comments: true
 
 {% highlight python linenos %}
 {
-    "access_token": "22250508db3dda21e4ba391982dfd9c3f9b974cd",
+    "access_token": "e746c164a701b79481c96cf80fa68b30b72ed9c1",
     "gist_id": "b1460be2e8af907fc2ea35999f5798a6"
 }
 {% endhighlight %}
