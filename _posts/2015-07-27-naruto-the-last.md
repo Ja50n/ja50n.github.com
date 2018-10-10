@@ -10,7 +10,9 @@ comments: True
 
 ---
 
-「火影忍者剧场版 - 最終章」片尾曲，很喜欢剧场版中鸣人与雏田最终走在一起的感觉。从暗恋，到最終鼓起勇气走到一起，这点与我自己的经历产生极大共鸣。喜欢婚礼的场景和感觉，希望以后的婚礼能够办成这样。
+「火影忍者剧场版 - 最終章」片尾曲。
+
+剧场版中雏田与鸣人最终走到一起。很喜欢他们的感情线，也有共鸣。结尾婚礼的画风和音乐都太美了。
 
 <!--more-->
 <div class="center"><embed src="https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/%E6%98%9F%E3%81%AE%E3%81%86%E3%81%A4%E3%82%8F.mp3" height="50"  allowNetworking="all" /></div>
