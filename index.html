@@ -6,14 +6,17 @@ layout: home
         {% for post in paginator.posts %}
         <li id="{{ post.postid }}" class="post-view">
             <h2>
-        <a class="lighter post-link a-hover" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+                <a class="lighter post-link a-hover" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
             <ul class="postinfo grey-text">
-                <li class="posttag"> <i class="mdi-maps-local-offer grey-text text-darken-4 post-i"></i> {% for tags in post.tags %}
-                    <a href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" class="grey-text text-darken-4 posttag-a" title="标签">{{tags}}</a> {% endfor %}
+                <li class="posttag"> <i class="mdi-maps-local-offer grey-text text-darken-4 post-i"></i> {% for tags in
+                    post.tags %}
+                    <a href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" class="grey-text text-darken-4 posttag-a"
+                        title="标签">{{tags}}</a> {% endfor %}
                 </li>
                 <li class="postcat"> <i class="mdi-file-folder grey-text text-darken-4 post-i"></i>
-                    <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="grey-text text-darken-4 posttag-a" title="分类">{{ post.categories }}</a>
+                    <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="grey-text text-darken-4 posttag-a"
+                        title="分类">{{ post.categories }}</a>
                 </li>
                 <li class="posttime grey-text text-darken-4">
                     <i class="mdi-action-today post-i"></i> {{ post.date | date: "%m/%d, %Y" }}
@@ -48,20 +51,20 @@ layout: home
         {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
         <li class="waves-effect">
             <a href="/">
-          <i class="mdi-navigation-chevron-left"></i>
-        </a>
+                <i class="mdi-navigation-chevron-left"></i>
+            </a>
         </li>
         {% else %}
         <li class="waves-effect">
             <a href="{{ paginator.previous_page_path }}">
-          <i class="mdi-navigation-chevron-left"></i>
-        </a>
+                <i class="mdi-navigation-chevron-left"></i>
+            </a>
         </li>
         {% endif %} {% else %}
         <li class="disabled">
             <a href="#!">
-        <i class="mdi-navigation-chevron-left"></i>
-      </a>
+                <i class="mdi-navigation-chevron-left"></i>
+            </a>
         </li>
         {% endif %}
         <!-- 判断导航结束 -->
@@ -91,14 +94,14 @@ layout: home
         {% if paginator.next_page %}
         <li class="waves-effect">
             <a href="{{ paginator.next_page_path }}">
-      <i class="mdi-navigation-chevron-right"></i>
-    </a>
+                <i class="mdi-navigation-chevron-right"></i>
+            </a>
         </li>
         {% else %}
         <li class="disable">
             <a href="#!">
-      <i class="mdi-navigation-chevron-right"></i>
-    </a>
+                <i class="mdi-navigation-chevron-right"></i>
+            </a>
         </li>
         {% endif %}
         <!-- 判断下一页导航结束 -->
@@ -108,5 +111,6 @@ layout: home
 
 <!-- 固定导航按钮 -->
 <div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
-    <a class="btn-floating btn-large waves-effect waves-light grey darken-4" href="javascript:pageScroll();" title="返回页首"><i class="mdi-hardware-keyboard-arrow-up"></i></a>
+    <a class="btn-floating btn-large waves-effect waves-light grey darken-4" href="javascript:pageScroll();" title="返回页首"><i
+            class="mdi-hardware-keyboard-arrow-up"></i></a>
 </div>
