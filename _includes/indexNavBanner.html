@@ -22,7 +22,7 @@
 </nav>
 <nav class="white nav-fixed z-depth-1 hide-on-med-and-up show-on-med-and-down" role="navigation">
     <div class="nav-wrapper container">
-        <a href="{{ site.baseurl }}/" class="brand-logo center waves-red top-logo" title="返回主页"><img  src="http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/33793204.jpg"></a>
+        <a href="{{ site.baseurl }}/" class="brand-logo center waves-red top-logo" title="返回主页"><img src="http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/33793204.jpg"></a>
         <ul id="nav-mobile" class="side-nav">
             <li class="logo" id="side-banner">
                 <a href="{{ site.baseurl }}/" class="waves-effect waves-light" id="side-logo"></a>
@@ -38,7 +38,8 @@
                             <ul>
                                 {% for category in site.categories %}
                                 <li>
-                                    <a class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/categories/index.html#{{ category | first }}-ref">{{ category | first }}</a>
+                                    <a class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/categories/index.html#{{ category | first }}-ref">{{
+                                        category | first }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -50,7 +51,8 @@
                             <ul>
                                 {% for tags in site.tags %}
                                 <li>
-                                    <a class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref">{{ tags | first }}</a>
+                                    <a class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref">{{
+                                        tags | first }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -66,7 +68,7 @@
             </li>
         </ul>
         <a href="" data-activates="nav-mobile" class="button-collapse waves-effect waves-light nav-a"> <i class="mdi-navigation-menu"></i>
-      </a>
+        </a>
     </div>
 </nav>
 <section class="section no-pad-bot no-padding" id="indexBanner">
@@ -87,7 +89,9 @@
                     <a class="white-text" target="_blank" href="https://pages.github.com/">Github-Pages</a>
                 </li>
                 <li>
-                    <a class="white-text" target="_blank" href="http://www.sublimetext.com/">Sublime Text</a> & <a class="white-text" target="_blank" href="https://code.visualstudio.com/?wt.mc_id=vscom_downloads">Visual Studio Code</a>
+                    <a class="white-text" target="_blank" href="http://www.sublimetext.com/">Sublime Text</a> & <a
+                        class="white-text" target="_blank" href="https://code.visualstudio.com/?wt.mc_id=vscom_downloads">Visual
+                        Studio Code</a>
                 </li>
                 <li>
                     <a class="white-text" target="_blank" href="http://materializecss.com/">MaterializeCSS</a>
@@ -112,25 +116,39 @@
         <!-- <div class="divider"></div> -->
 </section>
 <script>
-var winWidth = 0;
+    var winWidth = 0;
+    var winHeight = 0;
 
-function findDimensions() //函数：获取尺寸
-{
-    //获取窗口高度
-    if (window.innerHeight)
-        winHeight = window.innerHeight;
-    else if ((document.body) && (document.body.clientHeight))
-        winHeight = document.body.clientHeight;
-    //通过深入Document内部对body进行检测，获取窗口大小
-    if (document.documentElement && document.documentElement.clientHeight) {
-        winHeight = document.documentElement.clientHeight;
+    function findDimensions() //函数：获取尺寸
+    {
+        //获取窗口宽度
+        if (window.innerWidth)
+            winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth))
+            winWidth = document.body.clientWidth;
+        //获取窗口高度
+        if (window.innerHeight)
+            winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight))
+            winHeight = document.body.clientHeight;
+        //通过深入Document内部对body进行检测，获取窗口大小
+        if (document.documentElement && document.documentElement.clientHeight) {
+            winHeight = document.documentElement.clientHeight;
+        }
+        if (document.documentElement && document.documentElement.clientWidth) {
+            winWidth = document.documentElement.clientWidth;
+        }
+        var obj = document.getElementById('indexBanner');
+        obj.setAttribute("id", "indexBanner");
+        if ((winWidth / winHeight) > (4545 / 3904))
+            obj.style.height = winHeight + "px";
+        else
+            obj.style.height = winHeight + "px";
+        // obj.style.backgroundColor = "#000";
+        // obj.style.height = winWidth / (4545 / 3904) + "px";
     }
-    var obj = document.getElementById('indexBanner');
-    obj.setAttribute("id", "indexBanner");
-    obj.style.height = winHeight + "px";
-}
 
-findDimensions();
-//调用函数，获取数值
-window.onresize = findDimensions;
+    findDimensions();
+    //调用函数，获取数值
+    window.onresize = findDimensions;
 </script>
