@@ -11,11 +11,11 @@ comments: true
 
 备份同用于同步 VS Code 配置和插件的 Sync Settings 插件参数。
 
-{% highlight python linenos %}
+```python
 {
     "gist_id": "60c045c85986c0d3db0eb1cb7dec8ceeb5cdc892"
 }
-{% endhighlight %}
+```
 
 <!--more-->
 

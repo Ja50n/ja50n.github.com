@@ -30,11 +30,10 @@ published: True
 
 保存下面的代码到文件`sublime_imfix.c` (位于~目录)
 
-{% highlight c linenos %}
-
-    #include <gtk/gtkimcontext.h>
-    void gtk_im_context_set_client_window (GtkIMContext *context,GdkWindow *window)
-    {
+```c
+#include <gtk/gtkimcontext.h>
+void gtk_im_context_set_client_window (GtkIMContext *context,GdkWindow *window)
+{
     GtkIMContextClass *klass;
     g_return_if_fail (GTK_IS_IM_CONTEXT (context));
     klass = GTK_IM_CONTEXT_GET_CLASS (context);
@@ -47,9 +46,8 @@ published: True
     int height = gdk_window_get_height(window);
     if(width != 0 && height != 0)
         gtk_im_context_focus_in(context);
-    }
-
-{% endhighlight %}
+}
+```
 
 
 <br>
@@ -61,12 +59,10 @@ published: True
 
 将上一步的代码编译成共享库`libsublime-imfix.so`，命令
 
-{% highlight bash linenos %}
-
+```bash
 cd ~
 gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC
-
-{% endhighlight %}
+```
 
 注意：运行此命令前,可能需要先安装`gtk+-2.0`。
 
@@ -80,27 +76,23 @@ gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags 
 
 将`libsublime-imfix.so`拷贝到sublime_text所在文件夹
 
-{% highlight bash linenos %}
-
-    sudo mv libsublime-imfix.so /opt/sublime_text/
-
-{% endhighlight %}
+```bash
+sudo mv libsublime-imfix.so /opt/sublime_text/
+```
 
 修改文件`/usr/bin/subl`的内容
 
-{% highlight bash linenos %}
-
-    sudo gedit /usr/bin/subl
-
-{% endhighlight %}
+```bash
+sudo gedit /usr/bin/subl
+```
 
 将
 
-> *exec /opt/sublime_text/sublime_text "$@"*
+- `exec /opt/sublime_text/sublime_text "$@"`
 
 修改为
 
-> *LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text "$@"*
+- `LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text "$@"`
 
 此时，在命令中执行 `subl` 将可以使用搜狗for linux的中文输入。
 
@@ -116,35 +108,39 @@ gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags 
 
 命令
 
-{% highlight bash linenos %}
-
-    sudo gedit /usr/share/applications/sublime_text.desktop
-
-{% endhighlight %}
+```bash
+sudo gedit /usr/share/applications/sublime_text.desktop
+```
 
 将`[Desktop Entry]`中的字符串
 
-> *Exec=/opt/sublime_text/sublime_text %F*
+- `Exec=/opt/sublime_text/sublime_text %F`
 
 修改为
 
-> *Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F"*
+- `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F"`
+
+<br>
+<br>
 
 将`[Desktop Action Window]`中的字符串
 
-> *Exec=/opt/sublime_text/sublime_text -n*
+- `Exec=/opt/sublime_text/sublime_text -n`
 
 修改为
 
-> *Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text -n"*
+- `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text -n"`
+
+<br>
+<br>
 
 将`[Desktop Action Document]`中的字符串
 
-> *Exec=/opt/sublime_text/sublime_text --command new_file*
+- `Exec=/opt/sublime_text/sublime_text --command new_file`
 
 修改为
 
-> *Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"*
+- `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"`
 
 **注意：**
 

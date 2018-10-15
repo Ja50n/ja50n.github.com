@@ -49,9 +49,8 @@ comments: True
 
 5.将 `nameservicers / 域名服务器` 设置为 `custom / 自定义` ,写入DNSPos的两个默认地址,如:
 
-> `f1g1ns1.dnspod.net`
->
-> `f1g1ns2.dnspod.net`
+- `f1g1ns1.dnspod.net`
+- `f1g1ns2.dnspod.net`
 
 ![](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/20180911222802.png)
 

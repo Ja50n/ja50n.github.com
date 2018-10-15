@@ -7,6 +7,8 @@
     // font-size: .8rem;
     // line-height:1;
     color: #CCC;
+    padding:1px 5px 1px 10px;
+    border-radius: 5px;
     @extend %vertical-rhythm;
 
     .c     { color: #9C9; } // Comment
@@ -69,12 +71,15 @@
     .vg    { color: #008080 } // Name.Variable.Global
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
-    .lineno{ color: #666; padding:0 5px 0 0;text-align:right;
+    .lineno{ color: #999; 
+    padding:0;
+    text-align:right;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
-    border-right: 1px solid #777;}
-    .gl    { margin:0 auto;padding:0 20px 0 0;width:60px; }
+    // border-right: 1px solid #777;
+    }
+    .gl    { margin:0 auto;padding:0 20px 0 0;width:36px; }
     .code  { padding:0 10px 0 0; }
 }

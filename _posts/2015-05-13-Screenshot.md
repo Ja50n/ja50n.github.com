@@ -12,8 +12,7 @@ comments: True
 
 <!--more-->
 
-{% highlight vb linenos %}
-
+```vb
 Imports Cognex.VisionPro.ImageProcessing
 Imports System.Runtime.Serialization.Formatters.Binar
 
@@ -33,5 +32,4 @@ Private Sub SaveImage()
   Bit1.Dispose()
 
 End Sub
-
-{% endhighlight %}
+```

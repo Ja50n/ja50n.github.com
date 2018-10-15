@@ -12,24 +12,22 @@ comments: True
 
 <!--more-->
 
-{% highlight vb linenos %}
-
+```vb
 imports cognex.visionpro.cogImageFileTool
-
-{% endhighlight %}
+```
 
 使用 cogImageFileTool 可以将本地图片作为图片源.
 
-> cogImageFileTool.[Operator].Open(图片地址,CogImageFileModeContents.Read)
+```vb
+cogImageFileTool.[Operator].Open(图片地址,CogImageFileModeContents.Read)
+```
 
 示例代码：
-{% highlight vb linenos %}
-
+```vb
 '用 ImageTool 打开图片的函数
 mImageFileTool.[Operator].Open(mImagePath, CogImageFileModeConstants.Read)
 
 '将图像显示在 mToolDispaly 的方法
 mToolDisplay1.Tool = mBarcodeTool
 mToolDisplay1.SelectedRecordKey = "LastRun.InputImage"
-
-{% endhighlight %}
+```
