@@ -12,12 +12,7 @@ permalink: /about/
         {{ content }}
     </article> -->
 </div>
-<!-- 固定导航按钮 -->
-<div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
-    <a class="btn-floating btn-large waves-effect waves-light red darken-2  " href="javascript:pageScroll();">
-        <i class="mdi-file-file-upload"></i>
-    </a>
-</div>
+
 <style type="text/css">
     p img{
         border-radius:5px;
