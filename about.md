@@ -30,9 +30,9 @@ permalink: /about/
 
 <!-- 关于页面内容 -->
 
-![Jason](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/55632262.jpg)
+![Ja50n](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/55632262.jpg)
 
-##### Jason.Qiu
+##### Ja50n.Qiu
 
 
 <br>

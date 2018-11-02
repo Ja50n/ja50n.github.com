@@ -7,6 +7,8 @@ url: "https://blog.ulinkmega.com" # the base hostname & protocol for your site
 twitter_username: TINE4359
 github_username:  Ja50n
 weibo_username: TINE59
+tele_username: Ja50nQiu
+rss_url: atom.xml
 
 # Build settings
 markdown: kramdown
