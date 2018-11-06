@@ -14,17 +14,19 @@
             {% if page.comments %}
             {% if site.comments == "valine" %}
             {% include valineComments.html %}
-            {% else if site.comments == "livere" %}
+            {% endif %}
+            {% if site.comments == "livere" %}
             {% include livereComments.html %}
-            {% else if site.comments == "gitment" %}
+            {% endif %}
+            {% if site.comments == "gitment" %}
             {% include gitmentComments.html %}
             {% endif %}
-            {% endif %}</div>
+            {% endif %}
+        </div>
     </div>
     <!-- 评论框 end -->
 
     {% include footer.html %}
-
 
 </body>
 
