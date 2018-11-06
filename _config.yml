@@ -20,3 +20,8 @@ plugins:
   - jekyll-paginate
 
 port: 4000
+
+comments: gitment
+#comments: livere
+#comments: valine
+#comments: gitment

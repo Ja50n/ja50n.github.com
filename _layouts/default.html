@@ -12,21 +12,20 @@
     <div class="container">
         <div class="section">
             {% if page.comments %}
-            <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}">
-              {% include livereComments.html %}      
-            </div>
+            {% if site.comments == "valine" %}
+            {% include valineComments.html %}
+            {% else if site.comments == "livere" %}
+            {% include livereComments.html %}
+            {% else if site.comments == "gitment" %}
+            {% include gitmentComments.html %}
+            {% endif %}
             {% endif %}</div>
-    </div> 
+    </div>
     <!-- 评论框 end -->
 
-    <!-- 评论功能JS start -->
-    {% if page.comments %} 
-    {% endif %}
-    <!-- 评论功能JS end -->
+    {% include footer.html %}
 
-    {% include footer.html %} 
 
-   
 </body>
 
 </html>

@@ -20,9 +20,15 @@
     <div class="container">
         <div class="section">
             {% if page.comments %}
-            <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}">
-                {% include livereComments.html %}
-            </div>
+            {% if site.comments == "valine" %}
+            {% include valineComments.html %}
+            {% else if site.comments == "livere" %}
+            <!-- <div class="ds-thread section" data-thread-key="{{ page.postid }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}"> -->
+            {% include livereComments.html %}
+            <!-- </div> -->
+            {% else if site.comments == "gitment" %}
+            {% include gitmentComments.html %}
+            {% endif %}
             {% endif %}</div>
     </div>
     <!-- 评论框 end -->
@@ -36,7 +42,7 @@
 
     <script src="{{"/js/douban_movie.js" | prepend:site.baseurl }}"></script>
     <link href="{{"/css/douban.css" | prepend:site.baseurl }}" type="text/css" rel="stylesheet" />
-    
+
     <!-- 强制跳转到https的脚本 -->
     <script type="text/javascript">
         var url = window.location.href;
