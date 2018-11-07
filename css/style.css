@@ -468,6 +468,9 @@ p code,
 .username {
   position: relative;
 }
+#vcomments input{
+  width:30%;
+}
 @media only screen and (max-device-width: 500px) {
   #indexBanner {
     display: none;
@@ -522,6 +525,9 @@ p code,
   }
   .catainfo {
     display: none;
+  }
+  #vcomments input{
+    width:100%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -579,9 +585,13 @@ p code,
   .catainfo {
     display: none;
   }
+  #vcomments input{
+    width:100%;
+  }
 }
 @media only screen and (max-width: 319px) {
   #indexBanner {
     background-image: none;
   }
 }
+
