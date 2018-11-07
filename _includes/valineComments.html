@@ -4,9 +4,21 @@
 <script>
     new Valine({
         el: '#vcomments',
-        appId: 'vWjCmhD8Grt1kbo4N1sQryYO-gzGzoHsz',
-        appKey: 'h1sEPMSKFDTDyEvgUqTmci1p',
-        avatar:'',//默认头像
-        visitor: true // 阅读量统计
+        appId: 'cPpiyd7EHnXtl1dtitTyCwPH-9Nh9j0Va',
+        appKey: '5m27XdTGqKyeEndrU1rINSHH',
+        avatar: '',//默认头像
+        visitor: true,// 阅读量统计
+        // notify: true, 
+        placeholder: '说点什么吧'
     })
+</script>
+<script>
+    if (window.location.hash) {
+        var checkExist = setInterval(function () {
+            if ($(window.location.hash).length) {
+                $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 90 }, 1000);
+                clearInterval(checkExist);
+            }
+        }, 100);
+    }
 </script>
