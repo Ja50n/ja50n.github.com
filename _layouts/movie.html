@@ -19,17 +19,9 @@
     <!-- 评论框 start -->
     <div class="container">
         <div class="section">
-                {% if page.comments %}
-                {% if site.comments == "valine" %}
-                {% include valineComments.html %}
-                {% endif %}
-                {% if site.comments == "livere" %}
-                {% include livereComments.html %}
-                {% endif %}
-                {% if site.comments == "gitment" %}
-                {% include gitmentComments.html %}
-                {% endif %}
-                {% endif %}
+            {% if page.comments %}
+            {% include valineComments.html %}
+            {% endif %}
         </div>
     </div>
     <!-- 评论框 end -->
