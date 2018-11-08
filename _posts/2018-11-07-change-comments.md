@@ -4,7 +4,7 @@ title: "改用 Valine 作为博客评论系统"
 date: 2018-11-07 18:00:00
 postid: post181107
 categories: [Method]
-tags: [Valine, 评论, LeanCloud]
+tags: [评论, Valine, LeanCloud]
 published: true
 comments: true
 ---

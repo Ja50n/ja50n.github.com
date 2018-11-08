@@ -3,7 +3,7 @@ layout: post
 title:  "Vision Pro 打开本地图片"
 postid: post0516
 date:   2015-05-16 02:00:11
-tags: [Vision Pro, VB.NET]
+tags: [Vision Pro,Machine Vision, VB.NET]
 categories: [Code]
 published: True
 comments: True

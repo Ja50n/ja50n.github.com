@@ -3357,7 +3357,7 @@ nav,
 {
     overflow: hidden;
 
-    height: .5px;
+    height: 1px;
     margin-bottom: 20px;
 
     background-color: #e0e0e0;

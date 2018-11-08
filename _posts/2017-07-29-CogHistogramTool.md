@@ -4,7 +4,7 @@ title: "CogHistogramTool"
 date: 2017-07-29 22:03:51
 postid: post0730
 categories: [Notes]
-tags: [Vision Pro]
+tags: [Vision Pro,Machine Vision]
 published: True
 comments: True
 

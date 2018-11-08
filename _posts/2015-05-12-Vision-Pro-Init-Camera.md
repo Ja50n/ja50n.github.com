@@ -3,7 +3,7 @@ layout: post
 title:  "Vision Pro 初始化相机"
 postid: post0512
 date:   2015-05-12 00:56:13
-tags: [Vision Pro, VB.NET]
+tags: [Vision Pro, Machine Vision,VB.NET]
 categories: [Code]
 published: True
 comments: True
