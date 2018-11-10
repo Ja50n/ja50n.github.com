@@ -30,7 +30,8 @@ permalink: /about/
 
 <!-- 关于页面内容 -->
 
-![Ja50n](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/55632262.jpg)
+<!-- ![Ja50n](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/55632262.jpg) -->
+![Ja50n](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/2018-10.jpg)
 
 ##### Ja50n.Qiu
 

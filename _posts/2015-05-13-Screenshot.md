@@ -8,7 +8,8 @@ categories: [Code]
 published: True
 comments: True
 ---
-调用外部工程函数。对当前显示屏幕进行截屏并保存。
+
+代码块，调用外部工程函数。对当前显示屏幕进行截屏并保存。
 
 <!--more-->
 
@@ -16,7 +17,7 @@ comments: True
 Imports Cognex.VisionPro.ImageProcessing
 Imports System.Runtime.Serialization.Formatters.Binar
 
-Public Declare Function ClipCursor Lib "user32" Alias "ClipCursor" (ByRef rec As System.Drawing.Rectangle) As Long asdalsjdflasjflhasflhafhahsfahsjf
+Public Declare Function ClipCursor Lib "user32" Alias "ClipCursor" (ByRef rec As System.Drawing.Rectangle) As Long
 
 Dim Begin_Record As Boolean
 Dim Digital_Click As String
