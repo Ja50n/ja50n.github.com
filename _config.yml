@@ -22,5 +22,8 @@ plugins:
 port: 4000
 
 comments: valine
+strRaw: "{% raw %}"
+strEndRaw: "{% endraw %}"
+
 #valine
 #gitment

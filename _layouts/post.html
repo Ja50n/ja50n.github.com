@@ -5,10 +5,6 @@ layout: default
     <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="divider"></div>
-        <!--     <p class="post-meta">
-		{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-	</p>
-	-->
         <ul class="postinfo grey-text">
             <li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text text-darken-4 post-i"></i>
                 {% for tags in page.tags %}
@@ -27,10 +23,6 @@ layout: default
                 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_value_page_pv"></span>次
             </li>
-            <!-- <li class="postcomment grey-text text-darken-4">
-			<i class="mdi-communication-comment nbsp-1 post-i"></i>
-			<span class="ds-thread-count" data-thread-key="{{ page.postid }}" data-count-type="comments"></span>
-		</li> -->
             <div class="clear"></div>
         </ul>
     </header>
