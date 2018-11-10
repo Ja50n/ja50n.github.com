@@ -15,7 +15,7 @@
         <!-- 正在读 -->
         <div class="db-status-reading">
           <div class="loading"></div>
-          <h3 class="db-status-title">在读的书</h3>
+          <h3 class="db-status-title"><i class="mdi-action-book yellow-text"> </i>在读的书</h3>
           <ul id="db-reading-books" class="db-books">
             <script id="reading-template" type="text/x-handlebars-template">
               {% raw %}
@@ -34,7 +34,7 @@
         <!-- 想读的 -->
         <div class="db-status-wish">
           <div class="loading"></div>
-          <h3 class="db-status-title">想读的书</h3>
+          <h3 class="db-status-title"><i class="mdi-action-book blue-text"> </i>想读的书</h3>
           <ul id="db-wish-books" class="db-books">
             <script id="wish-template" type="text/x-handlebars-template">
               {% raw %}
@@ -54,7 +54,7 @@
         <!-- 读过的 -->
         <div class="db-status-read">
           <div class="loading"></div>
-          <h3 class="db-status-title">读过的书</h3>
+          <h3 class="db-status-title"><i class="mdi-action-book green-text"> </i>读过的书</h3>
           <ul id="db-read-books" class="db-books">
             <script id="read-template" type="text/x-handlebars-template">
               {% raw %}
@@ -73,10 +73,12 @@
       </div>
 
       <!-- Script -->
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.4/handlebars.min.js"></script>
+      <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.4/handlebars.min.js"></script> -->
+      <script src="{{ "/js/jquery-2.0.1.min.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/handlebars.min.js" | prepend: site.baseurl }}"></script>
       <!-- 引入要主js文件，地址根据你的情况填写。内容就是下面这个代码段 -->
-      <script src="/js/douban_books.js"></script>
+      <script src="{{ "/js/douban_books.js" | prepend: site.baseurl }}"></script>
       
       <div class="divider"></div>
       <div class="post-content">{{ content }}</div>
