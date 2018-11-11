@@ -43,9 +43,7 @@ $(document).ready(function() {
         $("#books_list").attr("data-flag", "false");
         $("#books_more")
           .show()
-          .text(
-            "好电影不一定改变人生，但一定会让人生更精彩"
-          );
+          .text("好电影不一定改变人生，但一定会让人生更精彩！");
       }
     });
   }
