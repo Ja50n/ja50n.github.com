@@ -2,15 +2,13 @@
 layout: default
 title: About
 permalink: /about/
+comments: true
 ---
 <div class="post">
     <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="divider"></div>
     </header>
-<!--     <article class="section about">
-        {{ content }}
-    </article> -->
 </div>
 
 <style type="text/css">
@@ -50,3 +48,12 @@ permalink: /about/
 希望通过思考寻找美好的方法
 
 希望通过行动成为美好的人
+
+
+<br>
+<br>
+<br>
+
+#### 欢迎留言
+
+----
