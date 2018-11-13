@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "go ahead"
-date: 2018-11-08 18:00:00
-postid: post181108
+title: "go ahead 0"
+date: 
+postid: 
 categories: [Life]
 tags: [思考]
-published: false
+published: true
 comments: true
 ---
 

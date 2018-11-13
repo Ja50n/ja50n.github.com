@@ -15,14 +15,8 @@ comments: true
     p img{
         border-radius:5px;
         box-shadow:none;
-        margin:0 auto 64px auto;
+        margin:0 0 16px 0;
         height:300px;
-    }
-    p img:hover{
-        box-shadow:none;
-    }
-    p,h5{
-        text-align:center;
     }
 </style>
 

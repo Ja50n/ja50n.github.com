@@ -4,7 +4,7 @@ title: Tags-cloud
 categories: []
 tags: []
 published: True
-
+permalink: /tagscloud/
 ---
 <div>
 	{% assign first = site.tags.first %}

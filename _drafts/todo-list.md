@@ -2,7 +2,7 @@
 layout: post
 title: todo
 categories: [Life]
-tags: [Dream List]
+tags: [TodoList]
 published: True
 
 ---
@@ -10,7 +10,7 @@ published: True
 + 学会游泳
 + 跳伞
 + MacBook Pro with Retina
-+ iPhone
++ iPhone Xs
 + Cherry 机械键盘
-+ 去欧洲旅游 
++ 欧洲旅游 
 + 

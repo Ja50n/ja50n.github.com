@@ -1,4 +1,0 @@
----
-title: text
-layout: post
----
