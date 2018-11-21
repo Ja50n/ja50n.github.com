@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-	
-{% include indexNavBanner.html %}
 
-  <div class="container">
-    <div class="section">{{ content }}</div>
-  </div>
-  <div style="display:none">
+  <body>
+    {% include indexNavBanner.html %}
 
-<!-- {% for post in site.posts %}
+    <div class="container">
+      <div class="section">{{ content }}</div>
+    </div>
 
-{% endfor %} -->
-
-</div>
-
-{% include footer.html %}
-
-</body>
-
+    {% include footer.html %}
+  </body>
 </html>

@@ -38,15 +38,10 @@ body {
   font-size: 1rem;
   font-weight: 400;
 
-  /*color: #000;*/
+  color: #000;
 }
-.nav-a:hover {
-  -webkit-transition: color ease 0.3s;
-  -moz-transition: color ease 0.3s;
-  -o-transition: color ease 0.3s;
-  transition: color ease 0.3s;
-
-  color: #2c7cff;
+.nav-a:visited {
+  color: #000;
 }
 .readmore-align {
   text-align: left;
@@ -54,6 +49,9 @@ body {
 .readmore {
   text-decoration: underline;
 
+  color: #424242;
+}
+.readmore:visited{
   color: #424242;
 }
 .readmore:hover {
@@ -65,8 +63,9 @@ body {
   color: #2c7cff;
 }
 #indexBanner {
-  background-color: #000;
-  background-image: url(https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/background-image.jpg);
+  background: radial-gradient(ellipse at bottom, #303a49 0, #151628 100%);
+  /* background-image: url(https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/bgi20181121-2.png); */
+  background-image: url(https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/bgi20181121.png);
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 100%;
@@ -75,8 +74,6 @@ body {
   margin-bottom: 20px;
 }
 #side-banner {
-  /*background-color: #FFF;*/
-  /*background-image: url(http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/1065758.jpg);*/
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100%;
@@ -107,8 +104,8 @@ body {
   text-align: center;
   font-family: "Consolas", "Source Code Pro";
 }
-#slogan div{
-  margin:36px 0;
+#slogan div {
+  margin: 36px 0;
 }
 .slogan-span {
   font-size: 4em;
