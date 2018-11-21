@@ -69,8 +69,8 @@ comments: true
 
 <br>
 
-<!-- ##### 授权
-- 训练版（开发版，包含VisionPro：MAX Package，时效训练版1/5年有效，到期续费，可中断）
+##### 授权
+- 训练版（开发版，包含VisionPro：MAX Package，时效训练版1 or 5年有效，到期续费，可中断）
 - 运行版（包含不同功能的版本，Red、Blue、Green，永久有效。软件升级需要续费）
 > VisionPro也有两个版本的加密狗
 
@@ -83,11 +83,11 @@ comments: true
 
 <br>
 
-##### 代理商名称：ViDi PSI
+<!-- ##### 代理商名称：ViDi PSI
 > 尚菱
-> 贝特威 -->
+> 贝特威
 
-<br>
+<br> -->
 
 ##### 聚焦
 - 植入ViDi概念到每个客户规划会议中
