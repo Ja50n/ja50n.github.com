@@ -1,45 +1,128 @@
 <!DOCTYPE html>
 <html>
+  {% include head.html %} 
+  <link rel="stylesheet" href="{{ "/css/douban.css" | prepend: site.baseurl }}">
 
-{% include head.html %}
-
-<body>
+  <body>
     {% include header.html %}
     <div class="container">
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <div class="divider"></div>
-        </header>
-        <div class="post-content">
-            {{ content }}
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="divider"></div>
+      </header>
+
+      <div class="douban-books">
+        <!-- 正在读 -->
+        <div class="db-status-reading">
+          <div class="loading"></div>
+          <h5 class="db-status-title"><i class="mdi-action-book yellow-text"> </i>在读的书</h5>
+          <div id="books_list">
+          <ul id="db-reading-books" class="mview--ul clearfix">
+            <script id="reading-template" type="text/x-handlebars-template">
+              {% raw %}
+                {{#each this}}
+                  <li class="mview--li">
+                    <a href="{{book.alt}}" target="_blank">
+                      <div class="mview--cover">
+                        <img src="{{book.images.medium}}" />
+                      </div>
+                      <div class="mview--info">
+                        <div class="mview--title">{{book.title}}</div>
+                        <div class="mview--rank rating">
+                          <div class="rating-star {{book.subtitle}}"></div><!-- book.subtitle此处重新赋值为星级评分 -->
+                          <div class="rating-average">{{book.rating.average}}</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                {{/each}}
+              {% endraw %}
+            </script>
+          </ul>
+          </div>
         </div>
-        <div class="post-content-reading">
-            <h4 class="db-status-title"><i class="mdi-action-book yellow-text"> </i>在读的书</h4>
-            <div class="divider"></div>
+        <!-- 想读的 -->
+        <div class="db-status-wish">
+          <div class="loading"></div>
+          <h5 class="db-status-title"><i class="mdi-action-book blue-text"> </i>想读的书</h5>
+          <div id="books_list">
+          <ul id="db-wish-books" class="mview--ul clearfix">
+            <script id="wish-template" type="text/x-handlebars-template">
+              {% raw %}
+                {{#each this}}
+                  <li class="mview--li">
+                    <a href="{{book.alt}}" target="_blank">
+                      <div class="mview--cover">
+                        <img src="{{book.images.medium}}" />
+                      </div>
+                      <div class="mview--info">
+                        <div class="mview--title">{{book.title}}</div>
+                        <div class="mview--rank rating">
+                          <div class="rating-star {{book.subtitle}}"></div><!-- book.subtitle此处重新赋值为星级评分 -->
+                          <div class="rating-average">{{book.rating.average}}</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                {{/each}}
+              {% endraw %}
+            </script>
+          </ul>
+          </div>
         </div>
-        <div class="post-content-wish">
-            <h4 class="db-status-title"><i class="mdi-action-book blue-text"> </i>想读的书</h4>
-            <div class="divider"></div>
+
+        <!-- 读过的 -->
+        <div class="db-status-read">
+          <div class="loading"></div>
+          <h5 class="db-status-title"><i class="mdi-action-book green-text"> </i>读过的书</h5>
+          <div id="books_list">
+          <ul id="db-read-books" class="mview--ul clearfix">
+            <script id="read-template" type="text/x-handlebars-template">
+              {% raw %}
+                {{#each this}}
+                  <li class="mview--li">
+                    <a href="{{book.alt}}" target="_blank">
+                      <div class="mview--cover">
+                        <img src="{{book.images.medium}}" />
+                      </div>
+                      <div class="mview--info">
+                        <div class="mview--title">{{book.title}}</div>
+                        <div class="mview--rank rating">
+                          <div class="rating-star {{book.subtitle}}"></div><!-- book.subtitle此处重新赋值为星级评分 -->
+                          <div class="rating-average">{{book.rating.average}}</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                {{/each}}
+              {% endraw %}
+            </script>
+          </ul>
+          </div>
         </div>
-         <div class="post-content-read">
-            <h4 class="db-status-title"><i class="mdi-action-book green-text"> </i>读过的书</h4>
-            <div class="divider"></div>
-        </div>
+      </div>
+
+      <!-- Script -->
+      <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.4/handlebars.min.js"></script> -->
+      <script src="{{ "/js/jquery-2.0.1.min.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/handlebars.min.js" | prepend: site.baseurl }}"></script>
+      <!-- 引入要主js文件，地址根据你的情况填写。内容就是下面这个代码段 -->
+      <script src="{{ "/js/douban_books.js" | prepend: site.baseurl }}"></script>
+      
+      <div class="divider"></div>
+      <div class="post-content">{{ content }}</div>
     </div>
+
+    
 
     <!-- 评论框 start -->
     <div class="container">
-        <div class="section">
-            {% include valineComments.html %}
-        </div>
+      <div class="section">{% include valineComments.html %}</div>
     </div>
     <!-- 评论框 end -->
 
     {% include footer.html %}
 
-    <script src="{{"/js/douban_books.js" | prepend:site.baseurl }}"></script>
-    <link href="{{"/css/douban.css" | prepend:site.baseurl }}" type="text/css" rel="stylesheet" />
-
-</body>
-
+  </body>
 </html>
