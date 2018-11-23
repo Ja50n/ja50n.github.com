@@ -14,11 +14,11 @@
 
 ##### 更新日志
 
+- 2018.11.23 - v1.0.18.1123
+    - 基于[MaterializeCSS](http://materializecss.com/)修改的自定义主题，近乎完成版。
 
-README断更
 
-
-* 2016/06/19 - v1.1
+<!-- * 2016/06/19 - v1.1
     - gitcafe与coding合并，所有项目迁移到coding，重新配置pages服务，目前尚有bug
 * 2015/08/28 - v1.02
     - 新增`/PYBHelp/`子目录
@@ -149,4 +149,4 @@ README断更
 [materialize]:http://materializecss.com/
 [SyntaxHighlighter]:http://alexgorbatchev.com/SyntaxHighlighter/
 [多说]:http://www.duoshuo.com
-[Jekyll]:http://jekyllcn.com/
+[Jekyll]:http://jekyllcn.com/ -->
