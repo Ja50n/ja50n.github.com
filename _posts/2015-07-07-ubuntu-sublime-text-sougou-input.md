@@ -7,6 +7,7 @@ categories: [Method]
 tags: [Sublime Text, Ubuntu]
 comments: True
 published: True
+header-img: /img/post-bg-unix-linux.jpg
 
 ---
 
@@ -19,12 +20,6 @@ published: True
 + 系统：Ubuntu14.04
 + 输入法：搜狗输入法 for Linux
 + 编辑器：Sublime text 3
-
-
-<br>
-<br>
-<br>
-
 
 ##### 步骤一
 
@@ -49,12 +44,6 @@ void gtk_im_context_set_client_window (GtkIMContext *context,GdkWindow *window)
 }
 ```
 
-
-<br>
-<br>
-<br>
-
-
 ##### 步骤二
 
 将上一步的代码编译成共享库`libsublime-imfix.so`，命令
@@ -65,12 +54,6 @@ gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags 
 ```
 
 注意：运行此命令前,可能需要先安装`gtk+-2.0`。
-
-
-<br>
-<br>
-<br>
-
 
 ##### 步骤三
 
@@ -86,61 +69,28 @@ sudo mv libsublime-imfix.so /opt/sublime_text/
 sudo gedit /usr/bin/subl
 ```
 
-将
-
-- `exec /opt/sublime_text/sublime_text "$@"`
-
-修改为
-
-- `LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text "$@"`
+- 将 `exec /opt/sublime_text/sublime_text "$@"`
+修改为 `LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text "$@"`
 
 此时，在命令中执行 `subl` 将可以使用搜狗for linux的中文输入。
-
-
-<br>
-<br>
-<br>
-
 
 ##### 步骤四
 
 为了使用鼠标右键打开文件及点击图标打开sublime时能够使用中文输入，还需要修改文件`sublime_text.desktop`的内容。
-
-命令
+命令：
 
 ```bash
 sudo gedit /usr/share/applications/sublime_text.desktop
 ```
 
-将`[Desktop Entry]`中的字符串
+- 将`[Desktop Entry]`中的字符串 `Exec=/opt/sublime_text/sublime_text %F`
+修改为 `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F"`
 
-- `Exec=/opt/sublime_text/sublime_text %F`
+- 将`[Desktop Action Window]`中的字符串 `Exec=/opt/sublime_text/sublime_text -n`
+修改为 `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text -n"`
 
-修改为
-
-- `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F"`
-
-<br>
-<br>
-
-将`[Desktop Action Window]`中的字符串
-
-- `Exec=/opt/sublime_text/sublime_text -n`
-
-修改为
-
-- `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text -n"`
-
-<br>
-<br>
-
-将`[Desktop Action Document]`中的字符串
-
-- `Exec=/opt/sublime_text/sublime_text --command new_file`
-
-修改为
-
-- `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"`
+- 将`[Desktop Action Document]`中的字符串 `Exec=/opt/sublime_text/sublime_text --command new_file`
+修改为 `Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"`
 
 **注意：**
 

@@ -1,89 +1,29 @@
-<header>
-    <nav class="white nav-fixed z-depth-1 hide-on-med-and-down" role="navigation" id="no-shadow">
-        <div class="nav-wrapper container">
-            <a href="{{ site.baseurl }}/" class="brand-logo waves-red top-logo" title="返回主页"><img src="http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/33793204.jpg"></a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="{{ site.baseurl }}/" class="waves-effect head-right nav-a">首页</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/books/" class="waves-effect waves-light nav-a">阅读</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/movie/" class="waves-effect waves-light nav-a">观影</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/categories/" class="waves-effect head-right nav-a">分类</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/tags/" class="waves-effect head-right nav-a">标签</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/about/" class="waves-effect head-right nav-a">关于</a>
-                </li>
-            </ul>
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.baseurl }}/{{ site.header-img }}{% endif %}')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        {% for tag in page.tags %}
+                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    <h1>{{ page.title }}</h1>
+                    {% comment %}
+                        always create a h2 for keeping the margin , Hux
+                    {% endcomment %}
+                    {% comment %} if page.subtitle {% endcomment %}
+                    <h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% comment %} endif {% endcomment %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </div>
         </div>
-    </nav>
-    <nav class="white nav-fixed z-depth-1 hide-on-med-and-up show-on-med-and-down" role="navigation">
-        <div class="nav-wrapper container">
-            <a href="{{ site.baseurl }}/" class="brand-logo center waves-red top-logo" title="返回主页"><img src="http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/33793204.jpg"></a>
-            <ul id="nav-mobile" class="side-nav">
-                <li class="logo" id="side-banner">
-                    <a href="{{ site.baseurl }}/" class="waves-effect waves-light" id="side-logo"></a>
-                </li>
-                <li class="bold">
-                    <a href="{{ site.baseurl }}/" class="waves-effect waves-light nav-a">首页</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/books/" class="waves-effect waves-light nav-a">阅读</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/movie/" class="waves-effect waves-light nav-a">观影</a>
-                </li>
-                <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                        <li class="bold">
-                            <a class="collapsible-header  waves-effect waves-light nav-a">分类</a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    {% for category in site.categories %}
-                                    <li>
-                                        <a class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/categories/index.html#{{ category | first }}-ref">{{
-                                            category | first }}</a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="bold">
-                            <a class="collapsible-header  waves-effect waves-light nav-a">标签</a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    {% for tags in site.tags %}
-                                    <li>
-                                        <a class="waves-effect waves-light nav-a" href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref">{{
-                                            tags | first }}</a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="bold">
-                    <a href="{{ site.baseurl }}/help/" class="waves-effect waves-light nav-a">帮助</a>
-                </li>
-                <li class="bold">
-                    <a href="{{ site.baseurl }}/about/" class="waves-effect waves-light nav-a">关于</a>
-                </li>
-            </ul>
-            <a href="" data-activates="nav-mobile" class="button-collapse waves-effect waves-light nav-a"> <i class="mdi-navigation-menu"></i>
-            </a>
-        </div>
-    </nav>
-    <!--  <nav role="navigation" class="white">
-        <div class="footer-copyright center">
-            <div class="container copyright-text grey-text"></div>
-        </div>
-    </nav> -->
+    </div>
 </header>

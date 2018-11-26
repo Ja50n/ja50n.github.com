@@ -1,69 +1,119 @@
 ---
 layout: default
 ---
-<div class="post">
-    <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <div class="divider"></div>
-        <ul class="postinfo grey-text">
-            <li class="posttag"> <i class="mdi-maps-local-offer nbsp-1 grey-text text-darken-4 post-i"></i>
-                {% for tags in page.tags %}
-                <a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" title="标签">{{tags}}</a>
-                {% endfor %}
-            </li>
-            <li class="postcat"> <i class="mdi-file-folder nbsp-1 grey-text text-darken-4 post-i"></i>
-                <a class="grey-text text-darken-4 posttag-a" href="{{ site.baseurl }}/categories/index.html#{{ page.categories }}-ref" title="分类">{{ page.categories}}</a>
-            </li>
-            <li class="posttime grey-text text-darken-4">
-                <i class="mdi-action-today nbsp-1 post-i"></i> 
-                {{ page.date | date: "%m/%d, %Y" }}
-            </li>
-            <li class="postvisited grey-text text-darken-4">
-                <i class="mdi-action-assessment post-i"></i>
-                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <span id="busuanzi_value_page_pv"></span>次
-            </li>
-            <li class="postvisited grey-text text-darken-4"><i class="mdi-editor-format-color-text"></i> {{ content | strip_html | strip_newlines | split: "" | size }}字</li>
-            <div class="clear"></div>
-        </ul>
-    </header>
-    <!-- 正文开始 -->
-    <article class="post-content post-ulol" id="{{ page.postid }}">{{ content }}</article>
-    <!-- 正文结束 -->
-    <div style="margin-bottom:100px"></div>
-    <!-- 标签云开始 -->
-    <div class="divider"></div>
-    <div>
-        {% for tags in site.tags %}
-        <a href="{{ site.baseurl }}/tags/index.html#{{ tags | first }}-ref" class="waves-effect waves-light white-text tags-cloud" >
-		{{ tags | first }}
-		<span class="cata-num">{{ tags | last | size }}</span>
-	</a>
-        {% endfor %}
-        <br>
-        <br></div>
-    <!-- 标签云结束	 -->
-    <!-- 页面导航开始 -->
-    <div class="divider"></div>
-    <div class="post-nav">
-        <div class="next">
-            {% if page.next %}
-            <a title="更新一篇" href="{{ page.next.url }}">
-			<i class="mdi-navigation-chevron-left"></i>
-			{{page.next.title}}
-        </a>
-            {% endif %}
-        </div>
-        <div class="pre">
-            {% if page.previous %}
-            <a title="更早一篇" href="{{ page.previous.url }}">
-			<i class="mdi-navigation-chevron-right"></i>
-			{{page.previous.title}}
-		</a>
-            {% endif %}
+
+<!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+{% include header.html %}
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				{{ content }}
+
+                <hr>
+
+                <ul class="pager">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                {% if site.featured-tags %}
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				{% for tag in site.tags %}
+                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                				<a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                    {{ tag[0] }}
+                                </a>
+                            {% endif %}
+        				{% endfor %}
+        			</div>
+                </section>
+                {% endif %}
+
+                <!-- Friends Blog -->
+                {% if site.friends %}
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    {% for friend in site.friends %}
+                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <!-- valine评论框 start -->
+                {% if site.valine_use %}
+                    {% include valineComments.html %}
+                {% endif %}
+            <!-- valine评论框 end -->
         </div>
     </div>
-</div>
-<div class="clear"></div>
-<div class="divider"></div>
 
+</article>
+
+{% if site.anchorjs %}
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+{% endif %}

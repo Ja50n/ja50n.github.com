@@ -1,106 +1,43 @@
 ---
-layout: home
+layout: page
+description: "想什么呢，上啊"
+header-img: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/bgi20181121.png
 ---
-<div class="home">
-    <ul class="post-list">
-        {% for post in paginator.posts %}
-        <li id="{{ post.postid }}" class="post-view">
-            <h2>
-                <a class="lighter post-link a-hover" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            <ul class="postinfo grey-text">
-                <li class="posttag"> <i class="mdi-maps-local-offer grey-text text-darken-4 post-i"></i> {% for tags in
-                    post.tags %}
-                    <a href="{{ site.baseurl }}/tags/index.html#{{tags}}-ref" class="grey-text text-darken-4 posttag-a"
-                        title="标签">{{tags}}</a> {% endfor %}
-                </li>
-                <li class="postcat"> <i class="mdi-file-folder grey-text text-darken-4 post-i"></i>
-                    <a href="{{ site.baseurl }}/categories/index.html#{{ post.categories }}-ref" class="grey-text text-darken-4 posttag-a"
-                        title="分类">{{ post.categories }}</a>
-                </li>
-                <li class="posttime grey-text text-darken-4">
-                    <i class="mdi-action-today post-i"></i> {{ post.date | date: "%m/%d, %Y" }}
-                </li>
-                <div class="clear"></div>
-            </ul>
-            {% if site.excerpt_separator %}
-            <div class="index-content">{{ post.excerpt }}</div>
-            <p>...</p>
-            {% else %}
-            <div class="index-content">{{ post.content }}</div>
-            {% endif %}
-            <p class="readmore-align">
-                <a href="{{ post.url | prepend: site.baseurl }}" class="readmore" target="_blank">
-                    <!-- <i class="mdi-navigation-chevron-right right"></i> -->
-                    阅读全文
-                </a>
-            </p>
-        </li>
-        <div class="divider"></div>
-        {% endfor %}
-    </ul>
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%-m/%-d, %Y" }}
+    </p>
 </div>
-<!-- 分页开始 -->
-<div class="section">
-    <ul class="pagination">
-        <!-- 判断导航开始 -->
-        {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
-        <li class="waves-effect">
-            <a href="/">
-                <i class="mdi-navigation-chevron-left"></i>
-            </a>
-        </li>
-        {% else %}
-        <li class="waves-effect">
-            <a href="{{ paginator.previous_page_path }}">
-                <i class="mdi-navigation-chevron-left"></i>
-            </a>
-        </li>
-        {% endif %} {% else %}
-        <li class="disabled">
-            <a href="#!">
-                <i class="mdi-navigation-chevron-left"></i>
-            </a>
-        </li>
-        {% endif %}
-        <!-- 判断导航结束 -->
-        <!-- 判断第一页开始 -->
-        {% if paginator.page == 1 %}
-        <li class="active">
-            <a href="#!">1</a>
-        </li>
-        {% else %}
-        <li class="waves-effect">
-            <a href="/">1</a>
-        </li>
-        {% endif %}
-        <!-- 判断第一页结束-->
-        <!-- 判断其余页数开始 -->
-        {% for count in (2..paginator.total_pages) %} {% if count == paginator.page %}
-        <li class="active">
-            <a href="#!">{{ count }}</a>
-        </li>
-        {% else %}
-        <li class="waves-effect">
-            <a href="/page{{ count }}">{{ count }}</a>
-        </li>
-        {% endif %} {% endfor %}
-        <!-- 判断其余页数结束 -->
-        <!-- 判断下一页导航开始 -->
-        {% if paginator.next_page %}
-        <li class="waves-effect">
-            <a href="{{ paginator.next_page_path }}">
-                <i class="mdi-navigation-chevron-right"></i>
-            </a>
-        </li>
-        {% else %}
-        <li class="disable">
-            <a href="#!">
-                <i class="mdi-navigation-chevron-right"></i>
-            </a>
-        </li>
-        {% endif %}
-        <!-- 判断下一页导航结束 -->
-    </ul>
-</div>
-<!-- 分也结束 -->
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

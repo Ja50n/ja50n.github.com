@@ -43,6 +43,7 @@
     height: auto;
     border-radius: 0 !important;
     box-shadow: none !important;
+    margin: 0;
   }
   .mview--cover img:hover {
     transition: box-shadow 0.3s;

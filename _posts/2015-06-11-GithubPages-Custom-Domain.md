@@ -28,11 +28,7 @@ comments: True
 * 在 `A` 记录中添加Github主机地址 `192.30.252.153` ,地址会有变动,使用 `ping github.com` 获取最新主机地址.
 * 在 `CNAME` 中将 `WWW` 指向 `username.github.io` ,如果是二级域名,如blog,也是一样设置(二级域名配置未验证,如有错误,欢迎指正)
 
-<br>
-
 ---
-
-<br>
 
 ##### 方法二:使用国内 [DNSPod] 域名解析服务
 

@@ -1,28 +1,10 @@
 ---
-layout: default
-title: 关于
-permalink: /about/
-comments: true
+layout: page
+title: "About"
+description: "Hey, this is Ja50n."
+header-img: "img/home-bg.jpg"
 ---
-<div class="post">
-    <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <div class="divider"></div>
-    </header>
-</div>
 
-<style type="text/css">
-    p img{
-        border-radius:5px;
-        box-shadow:none;
-        margin:0 0 16px 0;
-        height:300px;
-    }
-</style>
-
-<!-- 关于页面内容 -->
-
-<!-- ![Ja50n](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/55632262.jpg) -->
 ![Ja50n](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/2018-10.jpg)
 
 ##### Ja50n.Qiu
@@ -50,4 +32,3 @@ comments: true
 
 #### 欢迎留言
 
-----

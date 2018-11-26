@@ -17,18 +17,12 @@ comments: true
 
 <!--more-->
 
-<br>
-
 ##### 图像深度学习要点
 - 图像
 - 特征信息
 
-<br>
-
 ##### 图像深度学习代表性算法：
  - **Alex Net** - a Convolutional Neural Network（CNN）
-
-<br>
 
 ##### ViDi应用步骤
 1. 标注
@@ -36,15 +30,11 @@ comments: true
 3. 验证
 4. 应用
 
-<br>
-
 <!-- ##### ViDi应用过程
 1. 图像采集
 2. 特征提取
 3. --
 4. -- -->
-
-<br>
 
 ##### 工具介绍
 
@@ -60,28 +50,20 @@ comments: true
 ![Blue Read](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/39601969.jpg)
 - **Blue Read**: OCR识读 [*Optical Character Recognition*]
 
-<br>
-
 ##### ViDi相关特性:
 - 使用PatMax为ViDi精准定位,ViDi不会做精准定位，对细节信息不敏感（尺寸、面积等）
 - ViDi提取出来的特征：是区域、面积、结果...
 - OCR：康耐视用自己的字库，Halcon等使用MNIST标准字库
-
-<br>
 
 ##### 授权
 - 训练版（开发版，包含VisionPro：MAX Package，时效训练版1 or 5年有效，到期续费，可中断）
 - 运行版（包含不同功能的版本，Red、Blue、Green，永久有效。软件升级需要续费）
 > VisionPro也有两个版本的加密狗
 
-<br>
-
 ##### 性能选项
 - BASE - 基础版：相当于人检速度，在客户一块NVidia GPU卡上运行，适用于汽车行业；
 - STANDDARD - 标准版：在客户一块NVidia GPU卡上运行
 - ADVANCED - 高级版：在客户多块NVidia GPU卡上运行
-
-<br>
 
 <!-- ##### 代理商名称：ViDi PSI
 > 尚菱
@@ -99,8 +81,6 @@ comments: true
 - 分析投资回报率
 - 较长销售周期的心理准备，部署前需要几个月的工厂验证时间
 - 控制项目风险，最初阶段只对有限信息。
-
-<br>
 
 ##### 为应用选择合适的工具
 - ViDi

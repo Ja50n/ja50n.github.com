@@ -25,9 +25,7 @@ comments: True
 
 外贸建站中止后，我把心思放在了VB.NET的学习上，现在在一个机器视觉公司工作，正在转研发。在学习VB.NET过程中，一些笔记、代码需要记录下来。原来使用印象笔记做记录，其实印象笔记跨平台也挺方便的，但是总感觉不够自由，不够纯粹；代码显示效果也不够好。所以就有了建立一个独立博客的想法。希望可以快速做一个博客出来，不添加任何花哨的功能，只为博客日志。然后...最后还是各种折腾。
 
-用一个词来形容我到目前为止的编程学习之路就是“**折腾**”。
-
-用两个词来形容我的前端学习之路就是“**折腾UI**”， 一直纠结于网站好不好看， 每一个网站细节是不是合适，可能为了一个边距的问题查看很多别人的博客找到最合适的效果， 我想我有机会一定会去学设计的。
+用一个词来形容我到目前为止的编程学习之路就是“**折腾**”。 一直纠结于网站好不好看， 每一个网站细节是不是合适，可能为了一个边距的问题查看很多别人的博客找到最合适的效果， 我想我有机会一定会去学设计的。
 
 ##### 二、博客搭建过程
 
@@ -69,9 +67,9 @@ comments: True
 
 靠手动添加html网页的方法写文章太不方便了(大菜鸟...)，开始将目光放在了[Markdown](http://baike.baidu.com/link?url=A3xnniOZE1iUPTHZH8J6U_4B-1fApNqxDEvKmKF8pwxL98SKggC1cwvPJuP6ltiytdSgPtPEKFaMcHGR_sNiia)上。
 
-Markdown是很早就了解的一个标记语言，适合写文章。后来得知用Markdown写博客也很方便。便开始搜寻使用Markdown编写博客，而且不需要独立主机的方法，了解到了Jekyll/Hexo等工具。在犹豫选哪一种的时候，[JASKNi](http://jaskni.com )发了一个[微博](http://weibo.com/p/1005051805304714/home?from=page_100505&mod=TAB&is_search=1&key_word=jekyll#_rnd1434377320348)，说准备基于之前给[Zealer](http://www.zealer.com/)设计的官网出一套主题，先做WordPress，再做Jekyll和Ghost等流行服务。WordPress我是暂时用不了了，果断选择Jekyll。坐等主题出来。谁让我既喜欢Zealer又喜欢JASKNi呢。然后开始查找使用Jekyll建立博客的方法，看到很多都是Github Pages配Jekyll的方案。
+Markdown是很早就了解的一个标记语言，适合写文章。后来得知用Markdown写博客也很方便。便开始搜寻使用Markdown编写博客，而且不需要独立主机的方法，了解到了Jekyll/Hexo等工具。在犹豫选哪一种的时候，[JASKNi](http://jaskni.com )发了一个[微博](http://weibo.com/p/1005051805304714/home?from=page_100505&mod=TAB&is_search=1&key_word=jekyll#_rnd1434377320348)，说准备基于之前给[Zealer](http://www.zealer.com/)设计的官网出一套主题，先做WordPress，再做Jekyll和Ghost等流行服务。最后选择了Jekyll。坐等主题出来。谁让我既喜欢Zealer又喜欢JASKNi呢。然后开始查找使用Jekyll建立博客的方法，看到很多都是Github Pages配Jekyll的方案。
 
-知道git这个东西是因为MacTalk，订阅了他的微信公众账号，买了他的[MacTalk人生元编程]，了解了Linux之父Linus Torvalds的生平，知道了Linus创造的另一个奇迹git。在我开始正式写一些程序的时候，便开始使用git做版本控制。知道Github和GitCafe反而是这之前的事，但是那时候不知道它们都是站在git这个巨人肩膀上。
+知道git这个东西是因为[MacTalk](http://macshuo.com/)，订阅了他的微信公众账号，买了他的[【MacTalk人生元编程】](https://book.douban.com/subject/25826578/)，了解了Linux之父Linus Torvalds的生平，知道了Linus创造的另一个奇迹git。在我开始正式写一些程序的时候，便开始使用git做版本控制。知道Github和GitCafe反而是这之前的事，但是那时候不知道它们都是站在git这个巨人肩膀上。
 
 刚开始使用GitCafe是在做外贸网站的时候，作为私密项目托管在GitCafe上<!-- （在官方help的wiki中发现了Linus Torvalds名字拼写错误，奖励了500极特币.所以我是没有花钱的付费用户） -->，还是要比本地仓库好一些。选择GitCafe而没有选择Github的原因有三个:
 
@@ -84,8 +82,6 @@ Markdown是很早就了解的一个标记语言，适合写文章。后来得知
 ---
 2015.08.03更新:
 实现GieCafe和Github同步提交，域名解析使用DNSPod，分别根据访问IP解析到国内的GitCafe或者国外的Github，提高访问速度。
-
-<br>
 
 然后再迁移到Jekyll上，安装Jekyll，新建一个博客，按照Jekyll的配置方法把原博客相关文件搬进去，配置好，然后再把Jekyll项目移到原博客目录，删除原博客目录中不需要的文件。在根目录下运行 `jekyll serve`命令，浏览器打开 `localhost:4000`，就可以看到博客的效果了。
 
@@ -120,16 +116,10 @@ Jekyll的功能挺多的，[Jekyll](http://jekyllrb.com/)([中文](http://jekyll
 GitCafe已经卖给Coding了，不提供服务，GitCafe
 的代码迁移至Coding，最后放弃同步，只使用Github做代码托管，回归简单。
 
-<br>
-
 ---
 2017.** 更新:
 原来的文章图片为了提升浏览速度，统一托管在贴图库上，现在免费版的保存时间缩短到了7天，需要重新寻找更好的图片托管服务了。
 
-<br>
-
 ---
 2018.09.11 更新:
-*贴图库图床规则更改，图片丢失*，改为使用[PicGo](https://github.com/Molunerfinn/PicGo/releases)图床。
-
-<br>
+*贴图库图床规则更改，图片丢失*，改为使用[PicGo](https://github.com/Molunerfinn/PicGo/releases)图床工具，使用[阿里云OSS](https://www.aliyun.com/product/oss/) / [腾讯云COS](https://cloud.tencent.com/product/cos)作为图床。

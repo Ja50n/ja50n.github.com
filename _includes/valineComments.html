@@ -1,24 +1,37 @@
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<div id="vcomments"></div>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+{% if page.title == "About" %}
+<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+    <h4>评论：</h4>
+  <div id="vcomments"></div>
+</div>
+{% else %}
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+    <h4>评论：</h4>
+    <div id="vcomments"></div>
+</div>
+{% endif %}
 <script>
-    new Valine({
-        el: '#vcomments',
-        appId: 'cPpiyd7EHnXtl1dtitTyCwPH-9Nh9j0Va',
-        appKey: '5m27XdTGqKyeEndrU1rINSHH',
-        avatar: '',//默认头像
-        visitor: true,// 阅读量统计
-        // notify: true, 
-        placeholder: '说点什么吧'
-    })
+  new Valine({
+    el: "#vcomments",
+    appId: "cPpiyd7EHnXtl1dtitTyCwPH-9Nh9j0Va",
+    appKey: "5m27XdTGqKyeEndrU1rINSHH",
+    avatar: "", //默认头像
+    visitor: true, // 阅读量统计
+    // notify: true,
+    placeholder: "说点什么吧"
+  });
 </script>
 <script>
-    if (window.location.hash) {
-        var checkExist = setInterval(function () {
-            if ($(window.location.hash).length) {
-                $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 90 }, 1000);
-                clearInterval(checkExist);
-            }
-        }, 100);
-    }
+  if (window.location.hash) {
+    var checkExist = setInterval(function() {
+      if ($(window.location.hash).length) {
+        $("html, body").animate(
+          { scrollTop: $(window.location.hash).offset().top - 90 },
+          1000
+        );
+        clearInterval(checkExist);
+      }
+    }, 100);
+  }
 </script>
