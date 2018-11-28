@@ -990,3 +990,13 @@ html {
 #nav-logo {
   padding: 15px;
 }
+p a::before{
+  font-family:'FontAwesome';
+  content:"\f0c1";
+}
+p a{
+  margin:0 5px;
+}
+.intro-header-mask{
+  background:rgba(16,21,29,0.6)
+}

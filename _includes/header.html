@@ -1,10 +1,11 @@
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.baseurl }}/{{ site.header-img }}{% endif %}')
+        background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 </style>
 <header class="intro-header" >
+    <div class="intro-header intro-header-mask">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -25,5 +26,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </header>

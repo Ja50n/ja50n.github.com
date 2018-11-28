@@ -7,7 +7,7 @@ categories: [Life]
 tags: [Naruto, Music]
 published: True
 comments: True
-
+header-img: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/1.png  
 ---
 
 「火影忍者剧场版 - 最終章」片尾曲。

@@ -2,16 +2,12 @@
 layout: page
 title: "About"
 description: "Hey, this is Ja50n."
-header-img: "img/home-bg.jpg"
+header-img: https://ja50n-1251581744.cos.ap-guangzhou.myqcloud.com/image.png
 ---
 
 ![Ja50n](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/2018-10.jpg)
 
-##### Ja50n.Qiu
-
-
-<br>
-
+### Ja50n.Qiu
 
 喜欢一切美好的事物
 
@@ -25,10 +21,4 @@ header-img: "img/home-bg.jpg"
 
 希望通过行动成为美好的人
 
-
-<br>
-<br>
-<br>
-
-#### 欢迎留言
 

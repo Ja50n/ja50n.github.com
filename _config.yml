@@ -7,7 +7,7 @@ keyword: ""
 url: "https://blog.ulinkmega.com"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 rss_url: atom.xml
-logo: http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/35835029.jpg
+logo: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/35835029.jpg
 author: Ja50n
 
 # SNS settings
@@ -25,7 +25,7 @@ permalink: pretty
 paginate: 6
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 excerpt_separator: <!--more-->
-header-img: img/home-bg.jpg
+header-img: https://ja50n-1251581744.cos.ap-guangzhou.myqcloud.com/library (2).jpg
 anchorjs: true        # if you want to customize anchor. check out line:181 of `post.html`
 valine_use: true
 gitments: false

@@ -7,7 +7,7 @@ categories: [Notes]
 tags: [Cognex,Machine Vision,ViDi]
 published: true
 comments: true
-
+header-img: https://ja50n-1251581744.cos.ap-guangzhou.myqcloud.com/20181128110317.png
 ---
 
 ##### 深度学习 [Deep Learning]
@@ -38,16 +38,16 @@ comments: true
 
 ##### 工具介绍
 
-![Blue](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/16495628.jpg)
+![Blue](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/16495628.jpg)
 - **Blue**: 标注 [*FEATURE DETECTION & IDENTIFICATION*]
  
-![Red](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/592488.jpg)
+![Red](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/592488.jpg)
 - **Red**: 检查 [*AESTHETIC VISUAL INSPECTION & SEGMENTATION*]
 
-![Green](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/32677104.jpg)
+![Green](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/32677104.jpg)
 - **Green**: 分类 [*SCENE TAGGING & OBJECT CLASSIFICATION*]
 
-![Blue Read](http://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/39601969.jpg)
+![Blue Read](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/39601969.jpg)
 - **Blue Read**: OCR识读 [*Optical Character Recognition*]
 
 ##### ViDi相关特性:
