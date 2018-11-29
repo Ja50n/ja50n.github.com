@@ -7,6 +7,7 @@ tags: [VB.NET]
 categories: [Code]
 published: True
 comments: True
+hand-excerpt: True
 ---
 
 代码块，调用外部工程函数。对当前显示屏幕进行截屏并保存。

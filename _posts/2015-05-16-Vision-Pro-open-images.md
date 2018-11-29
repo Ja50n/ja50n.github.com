@@ -7,6 +7,7 @@ tags: [Vision Pro,Machine Vision, VB.NET]
 categories: [Code]
 published: True
 comments: True
+hand-excerpt: True
 ---
 在 Vision Pro 的vpp作业中添加 cogImageFileTool 工具，并添加引用到 form 中。
 

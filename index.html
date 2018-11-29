@@ -16,7 +16,11 @@ header-img: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/bgi20181121.png
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+            {% if post.hand-excerpt %}
+                {{ post.excerpt }}...
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
         </div>
     </a>
     <p class="post-meta">

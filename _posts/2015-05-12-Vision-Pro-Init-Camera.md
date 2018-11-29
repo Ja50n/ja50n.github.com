@@ -7,6 +7,7 @@ tags: [Vision Pro, Machine Vision,VB.NET]
 categories: [Code]
 published: True
 comments: True
+hand-excerpt: True
 ---
 
 **先用GetFifoState获取AcqFifoTool的状态.**

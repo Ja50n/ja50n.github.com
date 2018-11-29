@@ -553,7 +553,7 @@ pre code {
 }
 .post-content-preview {
   font-size: 13px;
-  font-style: italic;
+  /* font-style: italic; */
   color: #a3a3a3;
 }
 .post-content-preview:hover {
@@ -990,13 +990,21 @@ html {
 #nav-logo {
   padding: 15px;
 }
-p a::before{
+.post-container  p a::before,.post-container li a::before{
   font-family:'FontAwesome';
   content:"\f0c1";
 }
-p a{
+.post-container  p a,.post-container li a{
   margin:0 5px;
 }
+.mview--li a::before{
+  display: none;
+}
 .intro-header-mask{
-  background:rgba(16,21,29,0.6)
+  background:rgba(16,21,29,0.6);
+  background: linear-gradient(45deg , rgb(96, 122, 255,.4) , rgb(255, 88, 213,.4) 100%);
+  background: -o-linear-gradient(45deg , rgb(96, 122, 255,.4) , rgb(255, 88, 213,.4) 100%);
+  background: -ms-linear-gradient(45deg , rgb(96, 122, 255,.4) , rgb(255, 88, 213,.4) 100%);
+  background: -moz-linear-gradient(45deg , rgb(96, 122, 255,.4) , rgb(255, 88, 213,.4) 100%);
+  background: -webkit-linear-gradient(45deg , rgb(96, 122, 255,.4) , rgb(255, 88, 213,.4) 100%);
 }
