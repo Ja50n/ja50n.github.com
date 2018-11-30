@@ -7,7 +7,7 @@ keyword: ""
 url: "https://blog.ulinkmega.com"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 rss_url: atom.xml
-logo: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/18-7-29/35835029.jpg
+logo: img/logo.png
 author: Ja50n
 
 # SNS settings
