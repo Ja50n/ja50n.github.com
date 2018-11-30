@@ -997,8 +997,11 @@ html {
 .post-container  p a,.post-container li a{
   margin:0 5px;
 }
-.mview--li a::before{
+.mview--li a::before,.pager a::before,.vcontent li a::before,.vcontent p a::before{
   display: none;
+}
+.vcontent li a,.vcontent p a{
+  color:#1abc9c;
 }
 .intro-header-mask{
   background:rgba(16,21,29,0.6);

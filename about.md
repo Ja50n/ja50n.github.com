@@ -1,8 +1,11 @@
 ---
 layout: page
-title: "About"
-description: "Hey, this is Ja50n."
+title: About
+description: "你好！我是Ja50n，欢迎留言。"
 header-img: https://ja50n-1251581744.cos.ap-guangzhou.myqcloud.com/image.png
+comments: true
+publish: true
+permalink: /about/
 ---
 
 ![Ja50n](https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/2018-10.jpg)

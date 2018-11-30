@@ -7,7 +7,7 @@ categories: [Method]
 tags: [评论, Valine, LeanCloud]
 published: true
 comments: true
-header-img: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/bgi20181121-2.png
+header-img: /img/home-bg-2.png
 ---
 
 大家都会在博客里添加评论系统，有评论就有社交的感觉，就能交到更多的朋友（虽然我的博客更像我自己的后花园，没种什么好看的花，也没什么人来光顾）。

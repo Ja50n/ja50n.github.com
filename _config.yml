@@ -25,7 +25,7 @@ permalink: pretty
 paginate: 6
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 excerpt_separator: <!--more-->
-header-img: https://ja50n-1251581744.cos.ap-guangzhou.myqcloud.com/library (2).jpg
+header-img: /img/blog-bg.jpg
 anchorjs: true        # if you want to customize anchor. check out line:181 of `post.html`
 valine_use: true
 gitments: false

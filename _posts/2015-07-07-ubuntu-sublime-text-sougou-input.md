@@ -8,7 +8,7 @@ tags: [Sublime Text, Ubuntu]
 comments: True
 published: True
 hand-excerpt: True
-header-img: /img/post-bg-unix-linux.jpg
+header-img: https://ja50n-1251581744.cos.ap-guangzhou.myqcloud.com/20181130112424.png
 
 ---
 
