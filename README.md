@@ -13,9 +13,10 @@
 - [ ] 导航栏优化/更换主题；
 
 ##### 更新日志
-
+- 2019.01.10 - v1.0.19.0104
+  - Hux主题，v1.0版本
 - 2018.11.23 - v0.1.18.1123
-    - 基于[MaterializeCSS](http://materializecss.com/)修改的自定义主题，近乎完成版。
+  - 基于[MaterializeCSS](http://materializecss.com/)修改的自定义主题，近乎完成版。
 
 
 <!-- * 2016/06/19 - v1.1
