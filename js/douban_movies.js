@@ -1,9 +1,61 @@
+//By ImMmMm.com 20190618
 $(document).ready(function() {
   $(".post-content").append(
     "<div id='books_list' data-page='1'><ul class='mview--ul clearfix'></ul></div><div id='books_more'></div>"
   );
 
   showMyWishBooks();
+  
+  function showMyWishBooks(){
+    //apiSR 授权自 https://bm.weajs.com/user
+    var apiSR = '68181758e005936fceffb5705382bd51f2f97528a2f7398ff8ea84044f81841a';
+    var now_page = parseInt($('#books_list').attr('data-page'));
+    var doubanM = "https://bm.weajs.com/api/movies?page="+now_page+"&secret="+apiSR;
+    $('#books_more').show().text("加载中，请稍后");
+    $.ajax({
+        url: doubanM,
+        success: function(data) {
+            //console.log(data);
+            $('#books_list').attr({'data-page':now_page+1,'data-flag':'true'});
+            parseBookDatas(data);
+            $('#books_more').hide();
+        },
+        error: function() {
+            $('#books_list').attr('data-flag','false')
+            $('#books_more').show().text("ʅ(‾◡◝)就这些数据啦")
+        }
+   })
+};
+
+  // function showMyWishBooks() {
+  //   $("#books_more")
+  //     .show()
+  //     .text("加载中，请稍后");
+  //   var now_page = parseInt($("#books_list").attr("data-page"));
+  //   //apiSR 授权自 https://bm.weajs.com/user
+  //   var doubanM =
+  //     "https://mufeng.me/app/movie?app_key=8edae8c753f3aed3d7329a2698ca62f0&page=" +
+  //     now_page;
+  //   $.ajax({
+  //     url: doubanM,
+  //     success: function(data) {
+  //       // console.log(data);
+  //       $("#books_list").attr({
+  //         "data-page": now_page + 1,
+  //         "data-flag": "true"
+  //       });
+  //       parseBookDatas(data);
+  //       $("#books_more").hide();
+  //     },
+  //     error: function() {
+  //       $("#books_list").attr("data-flag", "false");
+  //       $("#books_more")
+  //         .show()
+  //         .text("好电影不一定改变人生，但一定会让人生更精彩！");
+  //     }
+  //   });
+  // }
+
 
   function parseBookDatas(data) {
     var item_template =
@@ -17,34 +69,6 @@ $(document).ready(function() {
         .replace(/__book_up_rating__/g, db_star)
         .replace(/__book_rating__average__/g, item.rating);
       $("ul.mview--ul").append(bookitem);
-    });
-  }
-
-  function showMyWishBooks() {
-    $("#books_more")
-      .show()
-      .text("加载中，请稍后");
-    var now_page = parseInt($("#books_list").attr("data-page"));
-    var doubanM =
-      "https://mufeng.me/app/movie?app_key=8edae8c753f3aed3d7329a2698ca62f0&page=" +
-      now_page;
-    $.ajax({
-      url: doubanM,
-      success: function(data) {
-        // console.log(data);
-        $("#books_list").attr({
-          "data-page": now_page + 1,
-          "data-flag": "true"
-        });
-        parseBookDatas(data);
-        $("#books_more").hide();
-      },
-      error: function() {
-        $("#books_list").attr("data-flag", "false");
-        $("#books_more")
-          .show()
-          .text("好电影不一定改变人生，但一定会让人生更精彩！");
-      }
     });
   }
 
