@@ -36,7 +36,7 @@ $(document).ready(function(){
     
     $(window).scroll(function (){
         var flag = $('#books_list').attr('data-flag');
-        if ($(this).scrollTop() + $(window).height() + 200 >= $(document).height() ) {
+        if ($(this).scrollTop() + $(window).height() + 50 >= $(".post-content").height() ) {
             if (flag == "true") {  
                 $('#books_list').attr('data-flag','false')
                 showMyWishBooks();
