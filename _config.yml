@@ -1,10 +1,10 @@
 # Site settings
 title: Ja50n - go ahead
 SEOTitle: Ja50n的博客 | go ahead
-email: 348538759@qq.com
+email: Ja50n.Qiu@qq.com
 description: ""
 keyword: ""
-url: "https://blog.ulinkmega.com"              # your host, for absolute URL
+url: "https://www.ulinkmega.com"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 rss_url: atom.xml
 logo: img/logo.png
@@ -50,7 +50,7 @@ kramdown:
 ba_track_id: c319ee4a1709fab66b5c289fe63aac77
 # Google Analytics
 ga_track_id: 'UA-130184697-1'            # Format: UA-xxxxxx-xx
-ga_domain: https://blog.ulinkmega.com
+ga_domain: https://www.ulinkmega.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
