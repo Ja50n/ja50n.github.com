@@ -4,7 +4,7 @@ SEOTitle: Ja50n的博客 | go ahead
 email: Ja50n.Qiu@qq.com
 description: ""
 keyword: ""
-url: "https://www.ulinkmega.com"              # your host, for absolute URL
+url: "https://ja50n.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 rss_url: atom.xml
 logo: img/logo.png
