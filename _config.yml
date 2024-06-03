@@ -29,7 +29,7 @@ header-img: /img/blog-bg.jpg
 anchorjs: true        # if you want to customize anchor. check out line:181 of `post.html`
 valine_use: true
 gitments: false
-serverURLs：https://PyYe5eld.api.lncldglobal.com
+serverURLs：'https://PyYe5eld.api.lncldglobal.com'
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
@@ -47,10 +47,10 @@ kramdown:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: c319ee4a1709fab66b5c289fe63aac77
+# ba_track_id: c319ee4a1709fab66b5c289fe63aac77
 # Google Analytics
-ga_track_id: 'UA-130184697-1'            # Format: UA-xxxxxx-xx
-ga_domain: https://www.ulinkmega.com
+# ga_track_id: 'UA-130184697-1'            # Format: UA-xxxxxx-xx
+# ga_domain: https://www.ulinkmega.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
