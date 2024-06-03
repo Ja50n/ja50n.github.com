@@ -15,11 +15,11 @@
 <script>
   new Valine({
     el: "#vcomments",
-    appId: {{ site.valine.appId }},
-    appKey: {{ site.valine.appKey }},
-    avatar: {{ site.valine.avatar }}, //默认头像
+    appId: "{{ site.valine.appId }}",
+    appKey: "{{ site.valine.appKey }}",
+    avatar: "{{ site.valine.avatar }}", //默认头像
     visitor: {{ site.valine.visitor }}, // 阅读量统计
-    placeholder: {{ site.valine.placeholder }},
+    placeholder: "{{ site.valine.placeholder }}",
     serverURLs: {{ site.valine.ServerURLs }}
        
   });
