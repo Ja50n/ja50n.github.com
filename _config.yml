@@ -29,7 +29,7 @@ header-img: /img/blog-bg.jpg
 anchorjs: true        # if you want to customize anchor. check out line:181 of `post.html`
 valine_use: true
 gitments: false
-serverURLs：'https://PyYe5eld.api.lncldglobal.com'
+
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
