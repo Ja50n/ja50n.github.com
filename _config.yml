@@ -29,7 +29,8 @@ header-img: /img/blog-bg.jpg
 anchorjs: true        # if you want to customize anchor. check out line:181 of `post.html`
 valine_use: true
 gitments: false
-valineServerURLs：'https://pyye5eld.api.lncldglobal.com'
+LeanCloud:
+  serverURLs：https://pyye5eld.api.lncldglobal.com
 
 
 # Gems
