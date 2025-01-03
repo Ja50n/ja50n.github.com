@@ -1,11 +1,11 @@
 # Site settings
-title: Ja50n - go ahead
-SEOTitle: Ja50n的博客 | go ahead
+title: Ja50n Blog
+SEOTitle: Ja50n Blog
 email: Ja50n.Qiu@qq.com
 description: ""
 keyword: ""
-url: "https://ja50n.github.io"              # your host, for absolute URL
-baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://ja50n.github.io" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 rss_url: atom.xml
 logo: img/logo.png
 author: Ja50n
@@ -18,31 +18,28 @@ github_username: Ja50n
 tele_username: Ja50nQiu
 # twitter_username: TINE4359
 
-
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
 paginate: 6
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md"]
 excerpt_separator: <!--more-->
 header-img: /img/blog-bg.jpg
-anchorjs: true        # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 valine_use: true
 gitments: false
 valine:
-  appId: "PyYe5eld7is58m5aOQ26YJpd-MdYXbMMI"
-  appKey: "bonpNK2iVLljo5wfyL9Fy1jC"
-  avatar: "" # 默认头像
-  visitor: true # 阅读量统计
-  placeholder: "说点什么吧"
-  apiURLs: https://pyye5eld.api.lncldglobal.com
+    appId: "PyYe5eld7is58m5aOQ26YJpd-MdYXbMMI"
+    appKey: "bonpNK2iVLljo5wfyL9Fy1jC"
+    avatar: "" # 默认头像
+    visitor: true # 阅读量统计
+    placeholder: "说点什么吧"
+    apiURLs: https://pyye5eld.api.lncldglobal.com
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 plugins: [jekyll-paginate]
-
-
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -50,7 +47,7 @@ plugins: [jekyll-paginate]
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+    input: GFM # use Github Flavored Markdown !important
 
 # Analytics settings
 # Baidu Analytics
@@ -60,64 +57,52 @@ kramdown:
 # ga_domain: https://www.ulinkmega.com
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "喜欢编程，喜欢设计，喜欢互联网，喜欢好的交互体验，机器视觉从业者。"
-sidebar-avatar: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/2018-10.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://myulinkblog.oss-cn-shenzhen.aliyuncs.com/2018-10.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 2              # A tag will be featured if the size of it is more than this condition value
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 2 # A tag will be featured if the size of it is more than this condition value
 
 # Friends
 friends: [
-    {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "JASKNi",
-        href: "http://blog.jaskni.com/"
-    },{
-        title: "土木坛子",
-        href: "https://tumutanzi.com/"
-    },{
-        title: "MARKSZのBlog",
-        href: "https://molunerfinn.com/"
-    },{
-        title: "周良粥凉",
-        href: "https://imzl.com/"
-    },{
-        title: "土木坛子",
-        href: "https://tumutanzi.com/"
-    },{
-        title: "常阳时光",
-        href: "https://cyhour.com/"
-    },{
-        title: "南歌鹿人",
-        href: "http://www.ma-am.cn/"
-    },{
-        title: "Typeblog",
-        href: "https://typeblog.net/"
-    },{
-        title: "Kevin Blog",
-        href: "http://blog.zhowkev.in/"
-    },{
-        title: "faw.life",
-        href: "http://faw.life/"
-    },{
-        title: "森纯博客",
-        href: "https://isenchun.cn/"
-    },{
-        title: "浮白载笔",
-        href: "http://www.winature.com/"
-    },{
-        title: "水八口记",
-        href: "https://blog.shuiba.co/"
-    },{
-        title: "随望淡思",
-        href: "https://www.lushaojun.com/"
-    }
-]
+        { title: "Hux Blog", href: "http://huangxuan.me" },
+        { title: "JASKNi", href: "http://blog.jaskni.com/" },
+        { title: "土木坛子", href: "https://tumutanzi.com/" },
+        { title: "MARKSZのBlog", href: "https://molunerfinn.com/" },
+        { title: "周良粥凉", href: "https://imzl.com/" },
+        { title: "Kevin Blog", href: "https://blog.kevinzhow.com/" },
+        { title: "水八口记", href: "https://blog.shuiba.co/" },
+        { title: "森纯博客", href: "https://isenchun.cn/" },
+        { title: "浮白载笔", href: "http://www.winature.com/" },
+        {
+            ,
+            # title: "随望淡思",
+            # href: "https://www.lushaojun.com/"
+        },
+        {
+            ,
+            # title: "faw.life",
+            # href: "http://faw.life/"
+        },
+        {
+            ,
+            # title: "常阳时光",
+            # href: "https://cyhour.com/"
+        },
+        {
+            ,
+            # title: "南歌鹿人",
+            # href: "http://www.ma-am.cn/"
+        },
+        {
+            ,
+            # title: "Typeblog",
+            # href: "https://typeblog.net/"
+        },
+    ]
 
-# Custome 
+# Custome
 strRaw: "{% raw %}"
 strEndRaw: "{% endraw %}"
