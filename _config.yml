@@ -16,7 +16,7 @@ RSS: true
 weibo_username: TINE59
 github_username: Ja50n
 tele_username: Ja50nQiu
-# twitter_username: TINE4359
+twitter_username: TINE4359
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -76,31 +76,31 @@ friends: [
         { title: "水八口记", href: "https://blog.shuiba.co/" },
         { title: "森纯博客", href: "https://isenchun.cn/" },
         { title: "浮白载笔", href: "http://www.winature.com/" },
-        {
-            ,
-            # title: "随望淡思",
-            # href: "https://www.lushaojun.com/"
-        },
-        {
-            ,
-            # title: "faw.life",
-            # href: "http://faw.life/"
-        },
-        {
-            ,
-            # title: "常阳时光",
-            # href: "https://cyhour.com/"
-        },
-        {
-            ,
-            # title: "南歌鹿人",
-            # href: "http://www.ma-am.cn/"
-        },
-        {
-            ,
-            # title: "Typeblog",
-            # href: "https://typeblog.net/"
-        },
+        # {
+
+        #     title: "随望淡思",
+        #     href: "https://www.lushaojun.com/"
+        # },
+        # {
+
+        #     title: "faw.life",
+        #     href: "http://faw.life/"
+        # },
+        # {
+
+        #     title: "常阳时光",
+        #     href: "https://cyhour.com/"
+        # },
+        # {
+
+        #     title: "南歌鹿人",
+        #     href: "http://www.ma-am.cn/"
+        # },
+        # {
+
+        #     title: "Typeblog",
+        #     href: "https://typeblog.net/"
+        # },
     ]
 
 # Custome
