@@ -1,0 +1,17 @@
+---
+layout: post
+title: 路过看看
+date: 2026-07-02 10:58:00 +0800
+postid: post260702
+categories: [Life]
+tags: 
+    - 动态
+published: true
+comments: true
+hand-excerpt: false
+header-img: https://ja50n-1251581744.cos.ap-guangzhou.myqcloud.com/road.png
+---
+
+`Leancloud`即将停止服务，之前评论区也一直有问题。问了一下AI有什么其他方法，推荐了github的`giscus`，让豆包做了个教程，按照步骤简单配置后，就可以使用了。
+
+顺便一提，元宝不如豆包，就这个评论区部署教程，同样的问题，元宝的教程没有图片，也不够详细，还存在错误。
