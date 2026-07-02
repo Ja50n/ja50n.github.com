@@ -72,13 +72,11 @@ layout: default
                 </ul>
                 {% endif %}
             </div>
-            <!-- valine评论框 start -->
+            <!-- 插入Giscus评论 -->
                 {% if page.comments %}
-                    {% if site.valine_use %}
-                       {% include valineComments.html %}
-                    {% endif %}
+                	{% include giscus.html %}
                 {% endif %}
-            <!-- valine评论框 end -->
+            <!-- Giscus评论 end -->
         </div>
     </div>
 
