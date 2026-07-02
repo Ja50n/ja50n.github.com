@@ -71,12 +71,16 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
-            </div>
             <!-- 插入Giscus评论 -->
-                {% if page.comments %}
-                	{% include giscus.html %}
-                {% endif %}
+              	<hr>
+                <h5>友链</h5>
+                <ul class="list-inline">
+                   {% if page.comments %}
+                		{% include giscus.html %}
+             	   {% endif %}
+                </ul>
             <!-- Giscus评论 end -->
+            </div>
         </div>
     </div>
 
