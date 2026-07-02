@@ -29,13 +29,13 @@ header-img: /img/blog-bg.jpg
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 valine_use: true
 gitments: false
-valine:
-    appId: "PyYe5eld7is58m5aOQ26YJpd-MdYXbMMI"
-    appKey: "bonpNK2iVLljo5wfyL9Fy1jC"
-    avatar: "" # 默认头像
-    visitor: true # 阅读量统计
-    placeholder: "说点什么吧"
-    apiURLs: https://pyye5eld.api.lncldglobal.com
+# Giscus 评论系统配置
+giscus:
+  enabled: true # 总开关，false全局关闭评论
+  repo: "Ja50n/ja50n.github.com"
+  repo_id: "MDEwOlJlcG9zaXRvcnk3NjExMDE0Mw"
+  category: "Announcements"
+  category_id: "DIC_kwDOBIlZP84DAU1F"
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
