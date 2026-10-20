@@ -67,15 +67,15 @@ featured-condition-size: 2 # A tag will be featured if the size of it is more th
 
 # Friends
 friends: [
-        { title: "Hux Blog", href: "http://huangxuan.me" },
-        { title: "JASKNi", href: "http://blog.jaskni.com/" },
-        { title: "土木坛子", href: "https://tumutanzi.com/" },
-        { title: "MARKSZのBlog", href: "https://molunerfinn.com/" },
-        { title: "周良粥凉", href: "https://imzl.com/" },
-        { title: "Kevin Blog", href: "https://blog.kevinzhow.com/" },
-        { title: "水八口记", href: "https://blog.shuiba.co/" },
-        { title: "森纯博客", href: "https://isenchun.cn/" },
-        { title: "浮白载笔", href: "http://www.winature.com/" },
+        # { title: "Hux Blog", href: "http://huangxuan.me" },
+        # { title: "JASKNi", href: "http://blog.jaskni.com/" },
+        # { title: "土木坛子", href: "https://tumutanzi.com/" },
+        # { title: "MARKSZのBlog", href: "https://molunerfinn.com/" },
+        # { title: "周良粥凉", href: "https://imzl.com/" },
+        # { title: "Kevin Blog", href: "https://blog.kevinzhow.com/" },
+        # { title: "水八口记", href: "https://blog.shuiba.co/" },
+        # { title: "森纯博客", href: "https://isenchun.cn/" },
+        # { title: "浮白载笔", href: "http://www.winature.com/" },
         # {
 
         #     title: "随望淡思",
